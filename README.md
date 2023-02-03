@@ -1,5 +1,4 @@
 <a href="https://keeg.in">
-  <img alt="Keeg.in - Keegan Burkett Personal Website" src="">
   <h1 align="center">Keeg.in</h1>
 </a>
 
@@ -9,7 +8,7 @@
 
 <p align="center">
   <a href="https://twitter.com/keegnn">
-    <img src="https://img.shields.io/twitter/follow/keegnn?style=flat&label=keegnn&logo=twitter&color=0bf&logoColor=fff" alt="Keegan Burkett Twitter follower count" />
+    <img src="https://img.shields.io/twitter/follow/keegnn?style=flat&label=keegnn&logo=twitter&color=0bf&logoColor=fff" alt="Keegan Burkett Twitter follower count" target="_blank" />
   </a>
 </p>
 
@@ -18,14 +17,6 @@
 ## Introduction
 
 Design and over-engineered using an opinionated collection of components, hooks, and utilities.
-
-## Deploy
-
-You can also clone & create this repo locally with the following command:
-
-```bash
-npx create-next-app precedent --example "https://github.com/keegn/keeg.in"
-```
 
 ### Frameworks
 
@@ -67,4 +58,3 @@ npx create-next-app precedent --example "https://github.com/keegn/keeg.in"
 ### Miscellaneous
 
 - [Vercel Analytics](https://vercel.com/analytics) – Track unique visitors, pageviews, and more in a privacy-friendly way
-# keeg.in
