@@ -39,9 +39,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <Head>
-          <script dangerouslySetInnerHTML={{ __html: modeScript }} />
-        </Head>
+        <script dangerouslySetInnerHTML={{ __html: modeScript }} />
       </Head>
       <body>
         <Main />

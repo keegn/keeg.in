@@ -28,10 +28,7 @@ export function Layout({
       <Meta {...meta} />
       {/* <SignInModal />
       <RequestAccessModal /> */}
-      {/* Navbar */}
-      {/* <Navigation /> */}
-      {/* Main content - remove min-h-screen when we get product shots */}
-      <main className="flex min-h-screen w-full flex-col items-center justify-center">
+      <main className="flex min-h-screen w-full flex-col items-start justify-start dark:bg-slate-900 sm:items-center sm:justify-center">
         {children}
       </main>
       {/* Footer */}
