@@ -18,7 +18,7 @@ export function Container({
   return (
     <div
       className={clsx(
-        fullWidth ? 'sm:mx-auto' : 'mx-auto max-w-screen-xl',
+        fullWidth ? 'sm:mx-auto' : 'max-w-screen-xl sm:mx-auto',
         className,
         section && 'px-4 sm:px-6 lg:px-8',
         navigation && 'px-4 py-4',
