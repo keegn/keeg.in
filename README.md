@@ -16,7 +16,7 @@
 
 ## Introduction
 
-Design and over-engineered using an opinionated collection of components, hooks, and utilities.
+Designed and over-engineered using an opinionated collection of components, hooks, and utilities.
 
 ### Frameworks
 
