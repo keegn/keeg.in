@@ -35,7 +35,7 @@ export function HomeHero() {
           <Logo />
           <div className="flex flex-row justify-between">
             <motion.h1
-              className="  bg-gradient-to-br from-black  to-stone-500 bg-clip-text text-center font-sans text-xl font-bold text-transparent drop-shadow-sm dark:from-white dark:to-slate-400 sm:text-2xl"
+              className="  bg-gradient-to-br from-black  to-stone-500 bg-clip-text text-center font-default text-xl font-bold text-transparent drop-shadow-sm dark:from-white dark:to-slate-400 sm:text-2xl"
               variants={FADE_DOWN_ANIMATION_VARIANTS}
             >
               Keegan Burkett
@@ -43,7 +43,7 @@ export function HomeHero() {
             <ModeToggle />
           </div>
           <motion.p
-            className="text-left font-sans font-normal dark:text-slate-300 dark:text-opacity-70 sm:text-xl"
+            className="text-left font-default text-lg font-light dark:text-slate-300 dark:text-opacity-70 sm:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
             Designing and building software for real estate and privacy focused
@@ -55,7 +55,7 @@ export function HomeHero() {
           </motion.p>
           <div />
           <motion.div>
-            <h4 className="font-sans text-sm font-semibold uppercase dark:text-slate-300 dark:text-opacity-70">
+            <h4 className="font-default text-xs font-semibold uppercase dark:text-slate-300 dark:text-opacity-70 ">
               Links
             </h4>
           </motion.div>
@@ -64,7 +64,7 @@ export function HomeHero() {
               <div className="pr-4">
                 <Link
                   href=""
-                  className="flex justify-between border-b-2 border-slate-100 pb-2 text-left font-sans text-lg text-gray-500  hover:cursor-pointer dark:border-slate-800 dark:text-slate-300 sm:text-lg"
+                  className="text-md flex justify-between border-b-2 border-slate-100 pb-2 text-left font-default text-gray-500 hover:cursor-pointer  dark:border-slate-800 dark:text-slate-300"
                 >
                   Twitter
                   <ExpandingArrow />
@@ -72,7 +72,7 @@ export function HomeHero() {
               </div>
               <Link
                 href=""
-                className="flex justify-between pb-2 text-left font-sans text-lg  text-gray-500 hover:cursor-pointer dark:text-slate-300 sm:text-lg"
+                className="text-md flex justify-between pb-2 text-left font-default text-gray-500  hover:cursor-pointer dark:text-slate-300"
               >
                 Github
                 <ExpandingArrow className="relative" />
@@ -81,14 +81,14 @@ export function HomeHero() {
             <div className="ml-2 flex w-full flex-col gap-2">
               <Link
                 href=""
-                className="flex justify-between border-b-2 border-slate-100 pb-2 text-left font-sans text-lg text-gray-500  hover:cursor-pointer dark:border-slate-800 dark:text-slate-300 sm:text-lg"
+                className="text-md flex justify-between border-b-2 border-slate-100 pb-2 text-left font-default text-gray-500  hover:cursor-pointer dark:border-slate-800 dark:text-slate-300"
               >
                 Dribbble
                 <ExpandingArrow className="relative" />
               </Link>
               <Link
                 href=""
-                className="flex justify-between pb-2  text-left font-sans text-lg  text-gray-500 hover:cursor-pointer dark:text-slate-300 sm:text-lg"
+                className="text-md tex flex justify-between  pb-2 text-gray-500 hover:cursor-pointer dark:text-slate-300"
               >
                 LinkedIn
                 <ExpandingArrow className="relative" />
