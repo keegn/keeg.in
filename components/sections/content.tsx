@@ -18,7 +18,7 @@ export function HomeHero() {
       <RequestAccessModal />
       <Container section className="max-w-lg pt-8 sm:pt-0">
         <motion.div
-          className="mx-auto flex max-w-xl flex-col items-start gap-5"
+          className="mx-auto flex max-w-xl flex-col items-start gap-4"
           initial="hidden"
           whileInView="show"
           animate="show"
