@@ -28,7 +28,7 @@ export function Layout({
       <Meta {...meta} />
       {/* <SignInModal />
       <RequestAccessModal /> */}
-      <main className="flex min-h-screen w-full flex-col items-start justify-start dark:bg-slate-900 sm:items-center sm:justify-center">
+      <main className="flex min-h-screen w-full flex-col items-start justify-start sm:items-center sm:justify-center">
         {children}
       </main>
       {/* Footer */}
