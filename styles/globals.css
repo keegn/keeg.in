@@ -7,3 +7,61 @@
   background-clip: text;
   color: transparent;
 }
+
+@layer base {
+  @font-face {
+    font-family: 'Suisse-Intl';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/suisse/SuisseIntlLight.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Suisse-Intl';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/suisse/SuisseIntlRegular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Suisse-Intl';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/suisse/SuisseIntlMedium.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Suisse-Intl';
+    font-style: normal;
+    font-weight: 600;
+    src: url(/fonts/suisse/SuisseIntlSemibold.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Suisse-Intl';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/suisse/SuisseIntlBold.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Suisse-Works';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/suisse/SuisseWorksBook.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Suisse-Works';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/suisse/SuisseWorksRegular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Suisse-Works';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/suisse/SuisseWorksMedium.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Suisse-Works';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/suisse/SuisseWorksBold.woff2) format('woff2');
+  }
+}
