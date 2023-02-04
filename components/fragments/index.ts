@@ -1,7 +1,5 @@
 export * from './card'
 export * from './demo-modal'
-export * from './sign-in-modal'
-export * from './user-dropdown'
 export * from './request-access-modal'
 export * from './popover'
 export * from './tooltip'
