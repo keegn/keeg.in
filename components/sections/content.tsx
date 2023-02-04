@@ -43,19 +43,23 @@ export function HomeHero() {
             <ModeToggle />
           </div>
           <motion.p
-            className="text-left font-default text-lg font-light dark:text-slate-300 dark:text-opacity-70 sm:text-xl"
+            className="text-left font-default text-lg font-light dark:text-[#999999] sm:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
             Designing and building software for real estate and privacy focused
             companies. Previously focused on building software at{' '}
-            <Link href="https://paytient.com" target={'_blank'}>
+            <Link
+              href="https://paytient.com"
+              target={'_blank'}
+              className="dark:text-white"
+            >
               Paytient
             </Link>
             , a new way to pay for out of pocket health care.
           </motion.p>
           <div />
           <motion.div>
-            <h4 className="font-default text-xs font-semibold uppercase dark:text-slate-300 dark:text-opacity-70 ">
+            <h4 className="font-default text-xs font-semibold uppercase dark:text-[#999999]">
               Links
             </h4>
           </motion.div>
