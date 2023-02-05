@@ -28,9 +28,7 @@ export function Layout({
       <RequestAccessModal /> */}
 
       <main className="relative flex min-h-screen w-full flex-col items-start justify-start sm:items-center sm:justify-center">
-        <GridTop />
         {children}
-        <GridBottom />
       </main>
 
       {/* Footer */}
