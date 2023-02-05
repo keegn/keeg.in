@@ -32,7 +32,9 @@ export function HomeHero() {
             },
           }}
         >
-          <Logo />
+          {/* <motion.div animate={{ rotate: 360 }} transition={{ duration: 1 }}>
+            <Logo />
+          </motion.div> */}
           <div className="flex flex-row justify-between">
             <motion.h1
               className="  bg-gradient-to-br from-black  to-stone-500 bg-clip-text text-center font-default text-xl font-bold text-transparent drop-shadow-sm dark:from-white dark:to-slate-400 sm:text-2xl"
@@ -58,12 +60,15 @@ export function HomeHero() {
             , a new way to pay for out of pocket health care.
           </motion.p>
           <div />
-          <motion.div>
+          <motion.div variants={FADE_DOWN_ANIMATION_VARIANTS}>
             <h4 className="font-default text-xs font-semibold uppercase dark:text-[#999999]">
               Links
             </h4>
           </motion.div>
-          <motion.div className="flex w-full flex-row justify-between">
+          <motion.div
+            className="flex w-full flex-row justify-between"
+            variants={FADE_DOWN_ANIMATION_VARIANTS}
+          >
             <div className="flex w-full flex-col gap-2">
               <div className="pr-4">
                 <Link
