@@ -45,7 +45,7 @@ export function HomeHero() {
              */}
           </div>
           <motion.p
-            className="text-left font-default text-lg font-light dark:text-[#999999] sm:text-xl"
+            className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
             Designing and building software for real estate and privacy focused
@@ -53,7 +53,7 @@ export function HomeHero() {
             <Link
               href="https://paytient.com"
               target={'_blank'}
-              className="dark:text-white"
+              className="text-white"
             >
               Paytient
             </Link>
