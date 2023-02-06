@@ -7,7 +7,6 @@ import {
   ModeToggle,
 } from '@/components/fragments'
 import { ExpandingArrow, FullGrid, Logo } from '../icons'
-import { useState } from 'react'
 
 export function HomeHero() {
   const { RequestAccessModal, setShowRequestAccessModal } =
@@ -16,10 +15,6 @@ export function HomeHero() {
   return (
     <>
       <RequestAccessModal />
-      {/* <div
-        className="absolute top-0 -z-10 h-full w-full bg-repeat"
-        style={{ backgroundImage: `url('/grid.svg')` }}
-      /> */}
       <FullGrid />
       <Container section className="max-w-lg pt-8 sm:pt-0">
         <motion.div
@@ -74,39 +69,49 @@ export function HomeHero() {
             className="flex w-full flex-row justify-between"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            <div className="flex w-full flex-col gap-2">
-              <div className="pr-4">
+            <div className="mr-4 flex w-full flex-col gap-2">
+              <div className="group">
                 <Link
-                  href=""
-                  className="text-md flex justify-between border-b-[1px] border-slate-800 bg-gradient-to-br from-white to-slate-400  bg-clip-text  pb-2 text-left font-default text-transparent hover:cursor-pointer"
+                  href="https://twitter.com/keegnn"
+                  target="_blank"
+                  className="text-md flex justify-between border-b-[1px] border-gray-800 border-opacity-70 bg-gradient-to-br from-white to-slate-400  bg-clip-text  pb-2 text-left font-default text-transparent hover:cursor-pointer"
                 >
                   Twitter
                   <ExpandingArrow />
                 </Link>
               </div>
-              <Link
-                href=""
-                className="text-md flex justify-between bg-gradient-to-br from-white to-slate-400  bg-clip-text  pb-2 text-left font-default text-transparent hover:cursor-pointer"
-              >
-                Github
-                <ExpandingArrow className="relative" />
-              </Link>
+              <div className="group">
+                <Link
+                  href="https://twitter.com/keegn"
+                  target="_blank"
+                  className="text-md flex justify-between bg-gradient-to-br from-white to-slate-400  bg-clip-text  pb-2 text-left font-default text-transparent hover:cursor-pointer"
+                >
+                  Github
+                  <ExpandingArrow />
+                </Link>
+              </div>
             </div>
-            <div className="ml-2 flex w-full flex-col gap-2">
-              <Link
-                href=""
-                className="text-md 0  flex justify-between border-b-[1px] border-slate-800 bg-gradient-to-br   from-white to-slate-400 bg-clip-text pb-2 text-left font-default  text-transparent hover:cursor-pointer"
-              >
-                Dribbble
-                <ExpandingArrow className="relative" />
-              </Link>
-              <Link
-                href=""
-                className="text-md flex  justify-between bg-gradient-to-br from-white to-slate-400 bg-clip-text pb-2  text-transparent hover:cursor-pointer"
-              >
-                LinkedIn
-                <ExpandingArrow className="relative" />
-              </Link>
+            <div className="flex w-full flex-col gap-2">
+              <div className="group">
+                <Link
+                  href=""
+                  target="_blank"
+                  className="text-md flex justify-between border-b-[1px] border-gray-800 border-opacity-70  bg-gradient-to-br  from-white to-slate-400 bg-clip-text pb-2 text-left font-default  text-transparent hover:cursor-pointer"
+                >
+                  Dribbble
+                  <ExpandingArrow />
+                </Link>
+              </div>
+              <div className="group">
+                <Link
+                  href="https://www.linkedin.com/in/keeganburkett/"
+                  target="_blank"
+                  className="text-md flex  justify-between bg-gradient-to-br from-white to-slate-400 bg-clip-text pb-2  text-transparent hover:cursor-pointer"
+                >
+                  LinkedIn
+                  <ExpandingArrow />
+                </Link>
+              </div>
             </div>
           </motion.div>
         </motion.div>
