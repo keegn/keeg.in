@@ -48,8 +48,8 @@ export function HomeHero() {
             className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            Designing and building software for real estate and privacy focused
-            companies. Previously focused on building software at{' '}
+            Currently building real estate and privacy focused software.
+            Previously focused on building software at{' '}
             <Link
               href="https://paytient.com"
               target={'_blank'}
@@ -57,7 +57,7 @@ export function HomeHero() {
             >
               Paytient
             </Link>
-            , a new way to pay for out of pocket health care.
+            , a new way to pay for out of pocket health care expenses.
           </motion.p>
           <div />
           <motion.div variants={FADE_DOWN_ANIMATION_VARIANTS}>
