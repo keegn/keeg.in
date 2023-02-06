@@ -94,21 +94,21 @@ export function HomeHero() {
             <div className="flex w-full flex-col gap-2">
               <div className="group">
                 <Link
-                  href="https://dribbble.com/keegin"
+                  href="https://www.linkedin.com/in/keeganburkett/"
                   target="_blank"
                   className="text-md flex justify-between border-b-[1px] border-gray-800 border-opacity-70  bg-gradient-to-br  from-white to-slate-400 bg-clip-text pb-2 text-left font-default  text-transparent hover:cursor-pointer"
                 >
-                  Dribbble
+                  LinkedIn
                   <ExpandingArrow />
                 </Link>
               </div>
               <div className="group">
                 <Link
-                  href="https://www.linkedin.com/in/keeganburkett/"
+                  href="https://dribbble.com/keegin"
                   target="_blank"
                   className="text-md flex  justify-between bg-gradient-to-br from-white to-slate-400 bg-clip-text pb-2  text-transparent hover:cursor-pointer"
                 >
-                  LinkedIn
+                  Dribbble
                   <ExpandingArrow />
                 </Link>
               </div>
