@@ -27,7 +27,7 @@ export function Layout({
       {/* <SignInModal />
       <RequestAccessModal /> */}
 
-      <main className="relative flex min-h-screen w-full flex-col items-start justify-start sm:items-center sm:justify-center">
+      <main className="relative isolate flex min-h-screen w-full flex-col items-start justify-start overflow-hidden bg-black sm:items-center sm:justify-center">
         {children}
       </main>
 

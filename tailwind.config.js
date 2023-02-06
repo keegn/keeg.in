@@ -7,7 +7,8 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: 'class',
+  // Disable dark mode for now
+  // darkMode: 'class',
   future: {
     hoverOnlyWhenSupported: true,
   },
