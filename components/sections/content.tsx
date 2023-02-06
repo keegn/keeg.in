@@ -82,7 +82,7 @@ export function HomeHero() {
               </div>
               <div className="group">
                 <Link
-                  href="https://twitter.com/keegn"
+                  href="https://github.com/keegn"
                   target="_blank"
                   className="text-md flex justify-between bg-gradient-to-br from-white to-slate-400  bg-clip-text  pb-2 text-left font-default text-transparent hover:cursor-pointer"
                 >
@@ -94,7 +94,7 @@ export function HomeHero() {
             <div className="flex w-full flex-col gap-2">
               <div className="group">
                 <Link
-                  href=""
+                  href="https://dribbble.com/keegin"
                   target="_blank"
                   className="text-md flex justify-between border-b-[1px] border-gray-800 border-opacity-70  bg-gradient-to-br  from-white to-slate-400 bg-clip-text pb-2 text-left font-default  text-transparent hover:cursor-pointer"
                 >
