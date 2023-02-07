@@ -49,7 +49,7 @@ export function HomeHero() {
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
             Currently building real estate and privacy focused software.
-            Previously focused on building software at{' '}
+            Previously founding team at{' '}
             <Link
               href="https://paytient.com"
               target={'_blank'}
