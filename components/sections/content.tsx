@@ -48,8 +48,8 @@ export function HomeHero() {
             className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            Currently building real estate and privacy focused software.
-            Previously founding team at{' '}
+            Software engineer and product designer. Currently building real
+            estate and privacy focused software. Previously founding team at{' '}
             <Link
               href="https://paytient.com"
               target={'_blank'}
