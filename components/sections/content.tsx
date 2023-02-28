@@ -2,19 +2,18 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { FADE_DOWN_ANIMATION_VARIANTS } from '@/lib/constants'
 import {
-  useRequestAccessModal,
+  useNewsletterModal,
   Container,
   ModeToggle,
 } from '@/components/fragments'
 import { ExpandingArrow, FullGrid, Logo } from '../icons'
 
-export function HomeHero() {
-  const { RequestAccessModal, setShowRequestAccessModal } =
-    useRequestAccessModal()
+export function Content() {
+  const { NewsletterModal, setShowNewsletterModal } = useNewsletterModal()
 
   return (
     <>
-      <RequestAccessModal />
+      <NewsletterModal />
       <FullGrid />
       <Container section className="max-w-lg pt-8 sm:pt-0">
         <motion.div

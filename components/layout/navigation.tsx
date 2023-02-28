@@ -4,15 +4,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import useScroll from '@/lib/hooks/use-scroll'
 import { Container } from '@/components/fragments'
-import { useRequestAccessModal } from '@/components/fragments/request-access-modal'
+import { useNewsletterModal } from '@/components/fragments/newsletter-modal'
 
 export function Navigation() {
-  const { RequestAccessModal, setShowRequestAccessModal } =
-    useRequestAccessModal()
+  const { NewsletterModal, setShowNewsletterModal } = useNewsletterModal()
   const scrolled = useScroll(50)
   return (
     <>
-      <RequestAccessModal />
+      <NewsletterModal />
       <nav
         className={`fixed top-0 w-full ${
           scrolled
@@ -36,10 +35,10 @@ export function Navigation() {
               <motion.button
                 // className="rounded-full border border-black bg-black p-1.5 px-4 font-default text-sm text-white transition-all hover:bg-white hover:text-black"
                 className="inline-flex h-8 w-auto flex-none touch-none select-none items-center justify-center rounded-md border border-transparent bg-black px-3.5 text-[13px] font-semibold leading-none text-white hover:bg-opacity-80 focus-visible:border-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 disabled:cursor-not-allowed disabled:opacity-50 dark:focus-visible:ring-blue-600"
-                onClick={() => setShowRequestAccessModal(true)}
+                onClick={() => setShowNewsletterModal(true)}
                 {...FADE_IN_ANIMATION_SETTINGS}
               >
-                Early access
+                Newsletter
               </motion.button>
             </AnimatePresence>
           </div>

@@ -1,14 +1,13 @@
 import { Layout } from '@/components/layout'
-import { HomeHero } from '@/components/sections'
-import { Announcement, useRequestAccessModal } from '@/components/fragments'
+import { Content } from '@/components/sections'
+import { Announcement, useNewsletterModal } from '@/components/fragments'
 
 export default function Home() {
-  const { RequestAccessModal, setShowRequestAccessModal } =
-    useRequestAccessModal()
+  const { NewsletterModal, setShowNewsletterModal } = useNewsletterModal()
   return (
     <Layout>
-      <RequestAccessModal />
-      <HomeHero />
+      <NewsletterModal />
+      <Content />
     </Layout>
   )
 }

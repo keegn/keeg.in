@@ -1,6 +1,6 @@
 export * from './card'
 export * from './demo-modal'
-export * from './request-access-modal'
+export * from './newsletter-modal'
 export * from './popover'
 export * from './tooltip'
 export * from './leaflet'

@@ -9,12 +9,12 @@ interface IFormInput {
   email: string
 }
 
-const RequestAccessModal = ({
-  showRequestAccessModal,
-  setShowRequestAccessModal,
+const NewsletterModal = ({
+  showNewsletterModal,
+  setShowNewsletterModal,
 }: {
-  showRequestAccessModal: boolean
-  setShowRequestAccessModal: Dispatch<SetStateAction<boolean>>
+  showNewsletterModal: boolean
+  setShowNewsletterModal: Dispatch<SetStateAction<boolean>>
 }) => {
   const router = useRouter()
 
@@ -28,9 +28,9 @@ const RequestAccessModal = ({
 
   const [submitted, setSubmitted] = useState(false)
 
-  const routeToEarlyAccess = (email: string) => {
+  const routeTo = (email: string, route: string) => {
     router.push({
-      pathname: '/early-access',
+      pathname: `${route}}`,
       query: { email: email },
     })
   }
@@ -40,7 +40,7 @@ const RequestAccessModal = ({
       return
     }
 
-    routeToEarlyAccess(data.email)
+    //example call routeTo(data.email, '/newsletter/confirm')
 
     try {
       let res = await fetch('/api/form/early-access-email', {
@@ -57,8 +57,8 @@ const RequestAccessModal = ({
 
   return (
     <Modal
-      showModal={showRequestAccessModal}
-      setShowModal={setShowRequestAccessModal}
+      showModal={showNewsletterModal}
+      setShowModal={setShowNewsletterModal}
     >
       <div className="w-full overflow-hidden md:max-w-md md:rounded-2xl md:border md:border-gray-100 md:shadow-xl">
         <div className="flex flex-col items-center justify-center space-y-3 bg-white px-4 py-6 pt-8 text-center md:px-16">
@@ -73,8 +73,8 @@ const RequestAccessModal = ({
           </a>
           <h3 className="font-display text-2xl font-bold">Request Access</h3>
           <p className="text-sm text-gray-500">
-            Join our growing waitlist today and our team will reach out to you
-            as soon as possible.
+            Every few weeks, I send out a newsletter with my latest thoughts on
+            life, tech, and new projects.
           </p>
           <form
             className="flex w-full flex-col gap-4"
@@ -130,7 +130,7 @@ const RequestAccessModal = ({
                   />
                 </svg>
               )}
-              Join waitlist
+              Subscribe
             </button>
           </form>
         </div>
@@ -139,23 +139,23 @@ const RequestAccessModal = ({
   )
 }
 
-export function useRequestAccessModal() {
-  const [showRequestAccessModal, setShowRequestAccessModal] = useState(false)
+export function useNewsletterModal() {
+  const [showNewsletterModal, setShowNewsletterModal] = useState(false)
 
-  const RequestAccessModalCallback = useCallback(() => {
+  const NewsletterModalCallback = useCallback(() => {
     return (
-      <RequestAccessModal
-        showRequestAccessModal={showRequestAccessModal}
-        setShowRequestAccessModal={setShowRequestAccessModal}
+      <NewsletterModal
+        showNewsletterModal={showNewsletterModal}
+        setShowNewsletterModal={setShowNewsletterModal}
       />
     )
-  }, [showRequestAccessModal, setShowRequestAccessModal])
+  }, [showNewsletterModal, setShowNewsletterModal])
 
   return useMemo(
     () => ({
-      setShowRequestAccessModal,
-      RequestAccessModal: RequestAccessModalCallback,
+      setShowNewsletterModal,
+      NewsletterModal: NewsletterModalCallback,
     }),
-    [setShowRequestAccessModal, RequestAccessModalCallback],
+    [setShowNewsletterModal, NewsletterModalCallback],
   )
 }

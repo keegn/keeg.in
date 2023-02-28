@@ -27,9 +27,8 @@ export default async function submitEmail(
     version: 'v4',
   })
 
-  // We could stick the spreadsheetId in an env variable, but I'm not sure if it works right now :man-shrugging:
   const response = await sheets.spreadsheets.values.append({
-    spreadsheetId: 'your spreadsheet id here',
+    spreadsheetId: `${process.env.GOOGLE_KEEGIN_NEWSLETTER_EMAIL_SPREADSHEET}`,
     range: 'Sheet1!A2',
     valueInputOption: 'USER_ENTERED',
     requestBody: {

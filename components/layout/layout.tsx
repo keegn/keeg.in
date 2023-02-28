@@ -1,10 +1,7 @@
 import { ReactNode } from 'react'
 import useScroll from '@/lib/hooks/use-scroll'
 import Meta from './meta'
-
-import { Navigation } from '@/components/layout'
-import { GridTop, GridBottom } from '@/components/icons'
-import { useRequestAccessModal } from '@/components/fragments/request-access-modal'
+import { useNewsletterModal } from '@/components/fragments/newsletter-modal'
 
 export function Layout({
   meta,
@@ -17,8 +14,7 @@ export function Layout({
   }
   children: ReactNode
 }) {
-  const { RequestAccessModal, setShowRequestAccessModal } =
-    useRequestAccessModal()
+  const { NewsletterModal, setShowNewsletterModal } = useNewsletterModal()
   const scrolled = useScroll(50)
 
   return (

@@ -4,7 +4,7 @@ const DOMAIN = 'https://keeg.in'
 
 export default function Meta({
   title = 'Keegan Burkett',
-  description = 'Software engineer, product design, and cyclist.',
+  description = 'Software engineer, product designer, and cyclist.',
   image = `${DOMAIN}/api/og`,
 }: {
   title?: string

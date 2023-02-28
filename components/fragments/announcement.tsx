@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { FADE_DOWN_ANIMATION_VARIANTS } from '@/lib/constants'
 
 export function Announcement({
   tagText,
@@ -12,10 +11,6 @@ export function Announcement({
     <div className="flex w-full items-center justify-center pt-16">
       <motion.a
         target="_blank"
-        // variants={FADE_DOWN_ANIMATION_VARIANTS}
-        // initial="hidden"
-        // whileInView="show"
-        // animate="show"
         rel="noopener noreferrer"
         className="flex w-full items-center justify-center gap-2 self-center border-b border-black/5 bg-black/[0.02] p-3 transition-all hover:bg-white hover:shadow hover:ring-1 hover:ring-black/5 md:rounded-lg lg:mx-auto lg:inline-flex lg:w-auto lg:rounded-full lg:border-b-0 lg:pr-5"
         href="/"

@@ -9,7 +9,7 @@ const nextConfig = {
     return [
       {
         source: '/github',
-        destination: 'https://github.com/keegn/new-keeg.in',
+        destination: 'https://github.com/keegn/keeg.in',
         permanent: false,
       },
     ]
