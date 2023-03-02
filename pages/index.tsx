@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout'
 import { Content } from '@/components/sections'
-import { Announcement, useNewsletterModal } from '@/components/fragments'
+import { useNewsletterModal } from '@/components/fragments'
 
 export default function Home() {
   const { NewsletterModal, setShowNewsletterModal } = useNewsletterModal()
