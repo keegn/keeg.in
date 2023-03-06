@@ -33,7 +33,6 @@ export function Navigation() {
           <div className="space-x-2">
             <AnimatePresence>
               <motion.button
-                // className="rounded-full border border-black bg-black p-1.5 px-4 font-default text-sm text-white transition-all hover:bg-white hover:text-black"
                 className="inline-flex h-8 w-auto flex-none touch-none select-none items-center justify-center rounded-md border border-transparent bg-black px-3.5 text-[13px] font-semibold leading-none text-white hover:bg-opacity-80 focus-visible:border-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 disabled:cursor-not-allowed disabled:opacity-50 dark:focus-visible:ring-blue-600"
                 onClick={() => setShowNewsletterModal(true)}
                 {...FADE_IN_ANIMATION_SETTINGS}

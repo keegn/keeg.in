@@ -1,11 +1,7 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { FADE_DOWN_ANIMATION_VARIANTS } from '@/lib/constants'
-import {
-  useNewsletterModal,
-  Container,
-  ModeToggle,
-} from '@/components/fragments'
+import { useNewsletterModal, Container } from '@/components/fragments'
 import { ExpandingArrow, FullGrid, Logo } from '../icons'
 
 export function Content() {
