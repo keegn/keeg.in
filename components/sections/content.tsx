@@ -46,7 +46,11 @@ export function Content() {
               className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
               variants={FADE_DOWN_ANIMATION_VARIANTS}
             >
-              <TextScrambler>Design Engineer</TextScrambler>
+              {/*
+              Currently there is a bug with the text scrambler on mobile. I'm going to leave this here until I can fix it.
+               <TextScrambler>Design Engineer</TextScrambler>
+                */}
+              Design Engineer
             </motion.p>
           </div>
           <motion.p
