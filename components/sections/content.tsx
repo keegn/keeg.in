@@ -30,7 +30,7 @@ export function Content() {
         >
           <div>
             <motion.h1
-              className="bg-gradient-to-br from-white to-slate-400 bg-clip-text  font-default text-xl font-bold text-transparent drop-shadow-sm sm:text-2xl"
+              className="bg-gradient-to-br from-white to-slate-400 bg-clip-text  font-default text-lg font-bold text-transparent drop-shadow-sm sm:text-xl"
               variants={FADE_DOWN_ANIMATION_VARIANTS}
             >
               Keegan Burkett
@@ -50,8 +50,9 @@ export function Content() {
             className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            Software engineer and product designer. Currently building real
-            estate and privacy focused software. Previously founding team at{' '}
+            A detail oriented frontend software engineer experienced with
+            Next.js, React, React Native, TypeScript, Tailwind CSS, and many
+            other modern tools. Previously founding team at{' '}
             <Link
               href="https://paytient.com"
               target={'_blank'}
