@@ -32,22 +32,16 @@ export function Content() {
           }}
         >
           <div>
-            <motion.h1
-              className="bg-gradient-to-br from-white to-slate-400 bg-clip-text  font-default text-lg font-bold text-transparent drop-shadow-sm sm:text-xl"
-              variants={FADE_DOWN_ANIMATION_VARIANTS}
-            >
+            <h1 className="bg-gradient-to-br from-white to-slate-400 bg-clip-text  font-default text-lg font-bold text-transparent drop-shadow-sm sm:text-xl">
               Keegan Burkett
-            </motion.h1>
+            </h1>
             {/* 
             For testing purposes, I'm going to leave this here until light mode is ready.
             <ModeToggle />
              */}
-            <motion.p
-              className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
-              variants={FADE_DOWN_ANIMATION_VARIANTS}
-            >
+            <p className="text-left font-default text-lg font-light text-[#999999] sm:text-xl">
               <TextScrambler>Design Engineer</TextScrambler>
-            </motion.p>
+            </p>
           </div>
           <motion.p
             className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
