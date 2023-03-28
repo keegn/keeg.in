@@ -1,8 +1,12 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { FADE_DOWN_ANIMATION_VARIANTS } from '@/lib/constants'
-import { useNewsletterModal, Container } from '@/components/fragments'
-import { ExpandingArrow, FullGrid, Logo } from '../icons'
+import {
+  useNewsletterModal,
+  Container,
+  TextScrambler,
+} from '@/components/fragments'
+import { ExpandingArrow, FullGrid, Logo } from '@/components/icons'
 
 export function Content() {
   const { NewsletterModal, setShowNewsletterModal } = useNewsletterModal()
@@ -27,9 +31,9 @@ export function Content() {
             },
           }}
         >
-          <div className="flex flex-row justify-between">
+          <div>
             <motion.h1
-              className="bg-gradient-to-br from-white to-slate-400 bg-clip-text  text-center font-default text-xl font-bold text-transparent drop-shadow-sm sm:text-2xl"
+              className="bg-gradient-to-br from-white to-slate-400 bg-clip-text  font-default text-lg font-bold text-transparent drop-shadow-sm sm:text-xl"
               variants={FADE_DOWN_ANIMATION_VARIANTS}
             >
               Keegan Burkett
@@ -38,13 +42,20 @@ export function Content() {
             For testing purposes, I'm going to leave this here until light mode is ready.
             <ModeToggle />
              */}
+            <motion.p
+              className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
+              variants={FADE_DOWN_ANIMATION_VARIANTS}
+            >
+              <TextScrambler>Design Engineer</TextScrambler>
+            </motion.p>
           </div>
           <motion.p
             className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            Software engineer and product designer. Currently building real
-            estate and privacy focused software. Previously founding team at{' '}
+            A detail oriented frontend software engineer experienced with
+            Next.js, React, React Native, TypeScript, Tailwind CSS, and many
+            other modern tools. Previously founding team at{' '}
             <Link
               href="https://paytient.com"
               target={'_blank'}
