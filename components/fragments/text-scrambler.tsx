@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useReducedMotion } from 'framer-motion'
-import { useInterval } from 'lib/hooks/use-interval'
-import { useMounted } from 'lib/hooks/use-mounted'
+import { useInterval } from '@/lib/hooks/use-interval'
+import { useMounted } from '@/lib/hooks/use-mounted'
 
 /**
  * TextScrambler
@@ -122,7 +122,10 @@ const getScrambledState = (
   return [unscrambled, scrambled]
 }
 
-const TextScrambler = ({ children, speed = 0.5 }: TextScramblerProps) => {
+export const TextScrambler = ({
+  children,
+  speed = 0.5,
+}: TextScramblerProps) => {
   const mounted = useMounted()
   const shouldReduceMotion = useReducedMotion()
   const size = children.length
@@ -159,5 +162,3 @@ const TextScrambler = ({ children, speed = 0.5 }: TextScramblerProps) => {
     </span>
   )
 }
-
-export { TextScrambler }
