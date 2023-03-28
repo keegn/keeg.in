@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { FADE_DOWN_ANIMATION_VARIANTS } from '@/lib/constants'
 import { useNewsletterModal, Container } from '@/components/fragments'
 import { ExpandingArrow, FullGrid, Logo } from '../icons'
+import { TextScrambler } from '../fragments/text-scrambler'
 
 export function Content() {
   const { NewsletterModal, setShowNewsletterModal } = useNewsletterModal()
@@ -27,9 +28,9 @@ export function Content() {
             },
           }}
         >
-          <div className="flex flex-row justify-between">
+          <div>
             <motion.h1
-              className="bg-gradient-to-br from-white to-slate-400 bg-clip-text  text-center font-default text-xl font-bold text-transparent drop-shadow-sm sm:text-2xl"
+              className="bg-gradient-to-br from-white to-slate-400 bg-clip-text  font-default text-xl font-bold text-transparent drop-shadow-sm sm:text-2xl"
               variants={FADE_DOWN_ANIMATION_VARIANTS}
             >
               Keegan Burkett
@@ -38,6 +39,12 @@ export function Content() {
             For testing purposes, I'm going to leave this here until light mode is ready.
             <ModeToggle />
              */}
+            <motion.p
+              className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
+              variants={FADE_DOWN_ANIMATION_VARIANTS}
+            >
+              <TextScrambler>Design Engineer</TextScrambler>
+            </motion.p>
           </div>
           <motion.p
             className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
