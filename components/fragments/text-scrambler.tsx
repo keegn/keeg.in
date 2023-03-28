@@ -150,11 +150,14 @@ export const TextScrambler = ({
 
   return (
     <span className="inline-grid">
-      <span className="pointer-events-none col-start-1 row-start-1 opacity-0">
+      <span className="pointer-events-none col-start-1 col-end-1 row-start-1 row-end-1 opacity-0">
         {children}
       </span>
       {mounted ? (
-        <span className="col-start-1 row-start-1" aria-hidden={true}>
+        <span
+          className="col-start-1 col-end-1 row-start-1 row-end-1"
+          aria-hidden={true}
+        >
           {unscrambled}
           {scrambled}
         </span>

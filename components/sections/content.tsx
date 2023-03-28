@@ -42,11 +42,17 @@ export function Content() {
             For testing purposes, I'm going to leave this here until light mode is ready.
             <ModeToggle />
              */}
-            <p className="text-left font-default text-lg font-light text-[#999999] sm:text-xl">
+            <motion.p
+              className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
+              variants={FADE_DOWN_ANIMATION_VARIANTS}
+            >
               <TextScrambler>Design Engineer</TextScrambler>
-            </p>
+            </motion.p>
           </div>
-          <p className="text-left font-default text-lg font-light text-[#999999] sm:text-xl">
+          <motion.p
+            className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
+            variants={FADE_DOWN_ANIMATION_VARIANTS}
+          >
             A detail oriented frontend software engineer experienced with
             Next.js, React, React Native, TypeScript, Tailwind CSS, and many
             other modern tools. Previously founding team at{' '}
@@ -58,7 +64,7 @@ export function Content() {
               Paytient
             </Link>
             , a new way to pay for out of pocket health care expenses.
-          </p>
+          </motion.p>
           <div />
           <motion.div variants={FADE_DOWN_ANIMATION_VARIANTS}>
             <h4 className="font-default text-xs font-semibold uppercase text-[#999999]">
