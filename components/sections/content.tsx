@@ -32,21 +32,24 @@ export function Content() {
           }}
         >
           <div>
-            <h1 className="bg-gradient-to-br from-white to-slate-400 bg-clip-text  font-default text-lg font-bold text-transparent drop-shadow-sm sm:text-xl">
+            <motion.h1
+              className="bg-gradient-to-br from-white to-slate-400 bg-clip-text  font-default text-lg font-bold text-transparent drop-shadow-sm sm:text-xl"
+              variants={FADE_DOWN_ANIMATION_VARIANTS}
+            >
               Keegan Burkett
-            </h1>
+            </motion.h1>
             {/* 
             For testing purposes, I'm going to leave this here until light mode is ready.
             <ModeToggle />
              */}
-            <p className="text-left font-default text-lg font-light text-[#999999] sm:text-xl">
+            <motion.p
+              className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
+              variants={FADE_DOWN_ANIMATION_VARIANTS}
+            >
               <TextScrambler>Design Engineer</TextScrambler>
-            </p>
+            </motion.p>
           </div>
-          <motion.p
-            className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
-            variants={FADE_DOWN_ANIMATION_VARIANTS}
-          >
+          <p className="text-left font-default text-lg font-light text-[#999999] sm:text-xl">
             A detail oriented frontend software engineer experienced with
             Next.js, React, React Native, TypeScript, Tailwind CSS, and many
             other modern tools. Previously founding team at{' '}
@@ -58,7 +61,7 @@ export function Content() {
               Paytient
             </Link>
             , a new way to pay for out of pocket health care expenses.
-          </motion.p>
+          </p>
           <div />
           <motion.div variants={FADE_DOWN_ANIMATION_VARIANTS}>
             <h4 className="font-default text-xs font-semibold uppercase text-[#999999]">
