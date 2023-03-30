@@ -57,9 +57,10 @@ export function Content() {
             className="text-left font-default text-lg font-light text-[#999999] sm:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            A detail oriented frontend software engineer experienced with
-            Next.js, React, React Native, TypeScript, Tailwind CSS, and many
-            other modern tools. Previously founding team at{' '}
+            A detail oriented frontend software engineer interested in Next.js,
+            Prisma, React, React Native, TypeScript, and Tailwind CSS.
+            Passionate about AI, privacy, and real estate. Previously founding
+            team at{' '}
             <Link
               href="https://paytient.com"
               target={'_blank'}
