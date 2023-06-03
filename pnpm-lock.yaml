@@ -15,6 +15,7 @@ specifiers:
   framer-motion: ^10.12.16
   lucide-react: ^0.233.0
   next: 13.4.4
+  next-themes: ^0.2.1
   postcss: ^8.4.24
   prettier: ^2.8.8
   prettier-plugin-tailwindcss: ^0.3.0
@@ -38,6 +39,7 @@ dependencies:
   framer-motion: 10.12.16_biqbaboplfbrettd7655fr4n2y
   lucide-react: 0.233.0_react@18.2.0
   next: 13.4.4_biqbaboplfbrettd7655fr4n2y
+  next-themes: 0.2.1_z4pol2qj2yv3um3jqqobs4b3eu
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.44.3_react@18.2.0
@@ -2077,6 +2079,18 @@ packages:
 
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
+
+  /next-themes/0.2.1_z4pol2qj2yv3um3jqqobs4b3eu:
+    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      next: 13.4.4_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /next/13.4.4_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-C5S0ysM0Ily9McL4Jb48nOQHT1BukOWI59uC3X/xCMlYIh9rJZCv7nzG92J6e1cOBqQbKovlpgvHWFmz4eKKEA==}
