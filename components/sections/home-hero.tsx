@@ -1,5 +1,6 @@
 'use client'
 
+import { CSSProperties } from 'react'
 import Balancer from 'react-wrap-balancer'
 
 import { Container } from '@/components/fragments/container'
@@ -12,8 +13,10 @@ export function HomeHero() {
         <div className="flex flex-col items-center gap-4 md:gap-6">
           <Badge variant={'outline'}>Welcome</Badge>
           <p className="mx-auto max-w-2xl text-center text-xl md:text-4xl">
-            Old Friends is an engineering studio. We build custom websites for
-            teams who value craft.
+            <Balancer>
+              A detail oriented frontend software engineer who cares about
+              craft.
+            </Balancer>
           </p>
         </div>
       </Container>
