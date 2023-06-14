@@ -2,8 +2,8 @@ import '@/styles/globals.css'
 
 import { Inter } from 'next/font/google'
 
-import { TailwindIndicator } from '@/components/tailwind-indicator'
-import { ThemeProvider } from '@/components/theme-provider'
+import { TailwindIndicator } from '@/components/fragments/tailwind-indicator'
+import { ThemeProvider } from '@/components/fragments/theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 

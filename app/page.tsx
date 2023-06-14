@@ -1,4 +1,4 @@
-import { ModeToggle } from '@/components/mode-toggle'
+import { ModeToggle } from '@/components/fragments/mode-toggle'
 
 export default function Home() {
   return (
