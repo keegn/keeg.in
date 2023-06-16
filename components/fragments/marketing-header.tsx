@@ -90,7 +90,7 @@ export function MarketingHeader() {
         )}
       >
         <Container type="nav">
-          <div className="flex w-full items-center justify-between rounded-full border border-primary bg-muted px-3 py-2 text-sm text-muted-foreground md:px-4">
+          <div className="mx-auto flex w-full max-w-3xl items-center justify-between rounded-full border border-primary bg-muted px-3 py-2 text-sm text-muted-foreground md:px-4">
             {/* LEFT NAV */}
             <Link href="/" className="text-3xl text-primary-foreground">
               ✺

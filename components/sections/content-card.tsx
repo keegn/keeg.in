@@ -4,7 +4,7 @@ import { Container } from '../fragments/container'
 
 export function ContentCard() {
   return (
-    <Container className="max-w-3xl py-0 md:py-12">
+    <Container className="max-w-3xl px-4 md:px-0 md:py-12">
       <div className="rounded-xl bg-muted p-12">
         <div className="grid auto-rows-auto gap-6">
           <div className="grid grid-cols-1 gap-2 md:grid-cols-6 md:gap-0">
