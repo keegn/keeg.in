@@ -1,6 +1,5 @@
 'use client'
 
-import { CSSProperties } from 'react'
 import Balancer from 'react-wrap-balancer'
 
 import { Container } from '@/components/fragments/container'

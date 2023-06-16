@@ -85,14 +85,16 @@ export function MarketingHeader() {
     <>
       <header
         className={cn(
-          'sticky bottom-0 z-40 flex',
+          'sticky top-0 z-40 flex',
           hasScrolled && 'transition-all'
         )}
       >
         <Container type="nav">
-          <div className=" flex w-full items-center justify-between rounded-full border border-primary-foreground px-3 py-2 md:px-4">
+          <div className="flex w-full items-center justify-between rounded-full border border-primary bg-muted px-3 py-2 text-sm text-muted-foreground md:px-4">
             {/* LEFT NAV */}
-            <Link href="/">Text</Link>
+            <Link href="/" className="text-3xl text-primary-foreground">
+              ✺
+            </Link>
             {/* MIDDLE NAV */}
             <div className="flex space-x-6">
               <div className="hidden lg:flex">
