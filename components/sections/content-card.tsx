@@ -1,5 +1,3 @@
-import Balancer from 'react-wrap-balancer'
-
 import { Container } from '../fragments/container'
 
 export function ContentCard() {
