@@ -6,8 +6,7 @@ export default function Stack() {
   return (
     <>
       {/* <GridBackground /> */}
-      <PageHero title={`Tools & products`} subtitle={'Stack'} />
-      <ContentCard />
+      <PageHero title={`Tools & Products`} subtitle={'Stack'} />
     </>
   )
 }

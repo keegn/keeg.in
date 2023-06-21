@@ -25,7 +25,7 @@ export function ModeToggle() {
   return (
     <div
       onClick={handleClick}
-      className="flex cursor-pointer space-x-2 rounded-full bg-secondary px-3 py-2"
+      className="flex cursor-pointer select-none items-center space-x-2 rounded-full bg-secondary px-3 py-2"
     >
       <span className="sr-only">Toggle theme</span>
       <span className="text-xs">{theme}</span>

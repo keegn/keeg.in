@@ -86,20 +86,23 @@ export function MarketingHeader({ className }: { className?: string }) {
     <>
       <header className={cn('', hasScrolled && 'transition-all', className)}>
         <Container type="nav">
-          <div className="mx-auto flex w-full max-w-3xl items-center justify-between rounded-full border border-primary bg-muted px-2 py-2 text-sm text-muted-foreground md:px-3">
+          <div className="mx-auto grid w-full max-w-3xl grid-cols-3 items-center rounded-full border border-primary bg-muted px-2 py-2 text-sm text-muted-foreground md:px-3">
             {/* LEFT NAV */}
-            <Link href="/" className="text-3xl text-primary-foreground">
+            <Link
+              href="/"
+              className="col-span-1 text-3xl text-primary-foreground"
+            >
               ✺
             </Link>
             {/* MIDDLE NAV */}
-            <div className="flex space-x-6">
+            <div className="col-span-1 flex space-x-6 justify-self-center">
               <div className="flex">
                 <NavTabs />
               </div>
             </div>
 
             {/* RIGHT NAV */}
-            <div className="flex items-center space-x-3">
+            <div className="col-span-1 flex items-center space-x-3 justify-self-end">
               <ModeToggle />
 
               {/* <div

@@ -7,7 +7,6 @@ export default function Products() {
     <>
       {/* <GridBackground /> */}
       <PageHero title={`Software & Templates`} subtitle={'Products'} />
-      <ContentCard />
     </>
   )
 }
