@@ -8,9 +8,10 @@ interface MarketingLayoutProps {
 export default function MarketingLayout({ children }: MarketingLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
-      <MarketingHeader />
+      <MarketingHeader className="sticky top-0 z-40 hidden md:flex" />
       <div className="flex-1">{children}</div>
       {/* <MarketingFooter /> */}
+      <MarketingHeader className="sticky bottom-0 md:hidden" />
     </div>
   )
 }

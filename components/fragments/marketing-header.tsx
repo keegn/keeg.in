@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
 import { Container } from '@/components/fragments/container'
+import { NavTabs } from '@/components/fragments/nav-tabs'
 import { ModeToggle } from './mode-toggle'
 
 // function MobileNavIcon({ open }: { open: boolean }) {
@@ -39,7 +40,7 @@ import { ModeToggle } from './mode-toggle'
 //   )
 // }
 
-export function MarketingHeader() {
+export function MarketingHeader({ className }: { className?: string }) {
   const [hasScrolled, setHasScrolled] = useState(false)
   //   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   //   const [width, setWidth] = useState(0)
@@ -83,12 +84,7 @@ export function MarketingHeader() {
 
   return (
     <>
-      <header
-        className={cn(
-          'sticky top-0 z-40 flex',
-          hasScrolled && 'transition-all'
-        )}
-      >
+      <header className={cn('', hasScrolled && 'transition-all', className)}>
         <Container type="nav">
           <div className="mx-auto flex w-full max-w-3xl items-center justify-between rounded-full border border-primary bg-muted px-3 py-2 text-sm text-muted-foreground md:px-4">
             {/* LEFT NAV */}
@@ -97,25 +93,8 @@ export function MarketingHeader() {
             </Link>
             {/* MIDDLE NAV */}
             <div className="flex space-x-6">
-              <div className="hidden lg:flex">
-                <Link
-                  href={siteConfig.links.home}
-                  legacyBehavior
-                  passHref
-                  id="product"
-                >
-                  Home
-                </Link>
-              </div>
-              <div className="hidden  lg:flex">
-                <Link href={siteConfig.links.stack} legacyBehavior passHref>
-                  Stack
-                </Link>
-              </div>
-              <div className="hidden lg:flex">
-                <Link href={siteConfig.links.stack} legacyBehavior passHref>
-                  Products
-                </Link>
+              <div className="flex">
+                <NavTabs />
               </div>
             </div>
 
@@ -172,7 +151,7 @@ export function MobileNav({
         >
           <Container type="nav">
             <div className="z-9 relative grid gap-6 pt-[54px] md:pt-[72px]">
-              <nav className="justify-centerauto-rows-max grid grid-flow-row divide-y divide-gray-100 text-sm">
+              <nav className="grid grid-flow-row auto-rows-max justify-center divide-y divide-gray-100 text-sm">
                 <Link
                   href={'/'}
                   className={cn(
@@ -185,7 +164,7 @@ export function MobileNav({
                 <Link
                   href={'/product'}
                   className={cn(
-                    'tracking-tigh flex w-full  items-center py-3 text-2xl font-semibold'
+                    'flex w-full items-center  py-3 text-2xl font-semibold tracking-tight'
                   )}
                   onClick={() => setMobileNavOpen(false)}
                 >

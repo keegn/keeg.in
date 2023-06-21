@@ -2,17 +2,11 @@ import { GridBackground } from '@/components/fragments/grid-background'
 import { ContentCard } from '@/components/sections/content-card'
 import { PageHero } from '@/components/sections/home-hero'
 
-export default function Home() {
+export default function Stack() {
   return (
     <>
       {/* <GridBackground /> */}
-      <PageHero
-        title={
-          'A detail oriented frontend software engineer who cares about craft.'
-        }
-        subtitle={'Welcome'}
-      />
-
+      <PageHero title={`Tools & products`} subtitle={'Stack'} />
       <ContentCard />
     </>
   )
