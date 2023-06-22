@@ -14,9 +14,8 @@ export function Container({ className, type, id, ...props }: Props) {
       className={clsx(
         type === undefined && 'container',
         type === 'fullWidth' && 'mx-auto',
-        type === 'section' && 'mx-auto max-w-screen-xl px-4 md:px-12 lg:px-16',
-        type === 'nav' &&
-          'mx-auto w-full max-w-screen-xl px-4 py-4 md:px-6 md:py-6 lg:px-12 lg:py-8',
+        type === 'section' && 'mx-auto max-w-screen-md px-4 md:px-12 lg:px-16',
+        type === 'nav' && 'mx-auto px-4 py-4 md:px-6 md:py-6 lg:px-12 lg:py-6',
         className
       )}
       {...props}

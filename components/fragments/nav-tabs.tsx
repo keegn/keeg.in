@@ -24,7 +24,7 @@ export function NavTabs() {
           key={link.href}
           className={cn(
             path === link.href && 'text-primary-foreground',
-            'hover:text-primary-foreground'
+            'text-sm hover:text-primary-foreground'
           )}
         >
           {link.label}

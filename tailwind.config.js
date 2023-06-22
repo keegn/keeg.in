@@ -5,6 +5,7 @@ module.exports = {
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   theme: {
     container: {
@@ -15,6 +16,12 @@ module.exports = {
       },
     },
     extend: {
+      boxShadow: {
+        'header-shadow': '0 10px 30px 0 rgba(0,0,0,.04)',
+        'product-shadow': '0 5px 30px 0 rgba(34,197,94,.24)',
+        'card-shadow': '0 10px 30px 0 rgba(0,0,0,.04)',
+        'white-button-glow': '0 0 30px 0 hsla(0,0%,100%,.4)',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -28,10 +35,6 @@ module.exports = {
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',
-        },
-        tertiary: {
-          DEFAULT: 'hsl(var(--tertiary))',
-          foreground: 'hsl(var(--tertiary-foreground))',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
