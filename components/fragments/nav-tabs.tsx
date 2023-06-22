@@ -23,8 +23,9 @@ export function NavTabs() {
           href={link.href}
           key={link.href}
           className={cn(
-            path === link.href && 'text-primary-foreground',
-            'text-sm hover:text-primary-foreground'
+            path === link.href &&
+              'transition-color ease-smooth cursor-pointer font-medium text-black/40 duration-150 hover:text-black',
+            'transition-color ease-smooth cursor-pointer font-medium text-black/40 duration-150 hover:text-black '
           )}
         >
           {link.label}

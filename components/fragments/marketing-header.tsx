@@ -86,7 +86,7 @@ export function MarketingHeader({ className }: { className?: string }) {
     <>
       <header className={cn('', hasScrolled && 'transition-all', className)}>
         <Container type="nav">
-          <div className="mx-auto flex items-center justify-between space-x-6 rounded-full border border-gray-100 bg-white/70 px-3 py-2 shadow-header-shadow backdrop-blur-lg dark:border-zinc-950 dark:bg-primary/10 md:px-4">
+          <div className="mx-auto flex w-[360px] items-center justify-between space-x-6 rounded-full border border-gray-100 bg-white/70 px-3 py-2 shadow-header-shadow backdrop-blur-lg dark:border-zinc-950 dark:bg-primary/10 md:px-4">
             {/* LEFT NAV */}
             <span className="flex items-center rounded-full bg-zinc-50">
               <Link href="/" className="text-3xl text-primary-foreground">

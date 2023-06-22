@@ -1,6 +1,7 @@
 import { GridBackground } from '@/components/fragments/grid-background'
 import { ContentCard } from '@/components/sections/content-card'
 import { PageHero } from '@/components/sections/home-hero'
+import { TestContent } from '@/components/sections/test-content'
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         }
         subtitle={'Welcome'}
       />
-
+      {/* <TestContent /> */}
       <ContentCard />
     </>
   )
