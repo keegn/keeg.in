@@ -7,8 +7,8 @@ export function ProductCard() {
   return (
     <Container type="section" className="px-4 md:px-0 md:pb-12">
       <div className="rounded-xl">
-        <div className="grid grid-cols-1 gap-0 gap-y-0 sm:grid-cols-12 sm:gap-x-6 sm:gap-y-8">
-          <div className="col-span-full sm:col-span-6">
+        <div className="mx-auto grid max-w-xs grid-cols-1 justify-items-center gap-8 sm:max-w-none sm:grid-cols-2">
+          <div>
             <Image
               src="/test.jpg"
               alt="Next.js"
@@ -16,25 +16,27 @@ export function ProductCard() {
               height={500}
               className="w-full rounded-md object-cover sm:w-fit"
             />
-          </div>
-          <div className="col-span-6">
-            <Badge variant={'outline'}>Template</Badge>
+
+            <p className="pt-2 text-secondary-foreground">Framer Template</p>
             <p>Brokerage</p>
-            <p>Framer template</p>
+            <p>
+              <p>Coming 2023</p>
+            </p>
           </div>
-          <div className="col-span-full sm:col-span-6">
-            <Image
-              src="/test.jpg"
-              alt="Next.js"
-              width={500}
-              height={500}
-              className="w-full rounded-md object-cover sm:w-fit"
-            />
-          </div>
-          <div className="col-span-6">
-            <Badge variant={'outline'}>SaaS</Badge>
-            <p>Brokerage</p>
-            <p>Framer template</p>
+          <div>
+            <div>
+              <Image
+                src="/test.jpg"
+                alt="Next.js"
+                width={500}
+                height={500}
+                className="w-full rounded-md object-cover sm:w-fit"
+              />
+            </div>
+
+            <p className="pt-2 text-secondary-foreground">B2B SaaS</p>
+            <p>Stealth</p>
+            <p>Coming 2023</p>
           </div>
         </div>
       </div>
