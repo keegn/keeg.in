@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export const BgRay = () => {
+export function BgRay() {
   return (
     <Image
       src="/design/bgray.png"

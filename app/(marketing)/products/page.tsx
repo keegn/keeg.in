@@ -7,7 +7,6 @@ export default function Products() {
     <>
       <BgRay />
       <PageHero title={`Software & Templates`} subtitle={'Products'} />
-
       <ProductCard />
     </>
   )

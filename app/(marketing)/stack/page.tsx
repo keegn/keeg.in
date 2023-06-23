@@ -7,7 +7,6 @@ export default function Stack() {
     <>
       <BgRay />
       <PageHero title={`Tools & Products`} subtitle={'Stack'} />
-
       <StackCard />
     </>
   )

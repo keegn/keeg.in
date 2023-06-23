@@ -4,7 +4,7 @@ interface Props {
   className?: string
 }
 
-export const Divider = ({ className }: Props) => {
+export function Divider({ className }: Props) {
   return (
     <div
       className={cn(

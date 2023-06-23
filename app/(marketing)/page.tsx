@@ -12,8 +12,6 @@ export default function Home() {
         }
         subtitle={'Welcome'}
       />
-
-      {/* <TestContent /> */}
       <ContentCard />
     </>
   )

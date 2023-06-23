@@ -1,5 +1,4 @@
-// import { MarketingFooter } from '@/components/fragments/marketing-footer'
-import { MarketingHeader } from '@/components/fragments/marketing-header'
+import { NavIsland } from '@/components/fragments/nav-island'
 
 interface MarketingLayoutProps {
   children: React.ReactNode
@@ -8,10 +7,8 @@ interface MarketingLayoutProps {
 export default function MarketingLayout({ children }: MarketingLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
-      {/* <MarketingHeader className="sticky top-0 " /> */}
       <div className="flex-1">{children}</div>
-      {/* <MarketingFooter /> */}
-      <MarketingHeader className="fixed bottom-6 self-center" />
+      <NavIsland className="fixed bottom-6 self-center" />
     </div>
   )
 }
