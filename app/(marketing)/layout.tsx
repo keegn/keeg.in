@@ -11,7 +11,7 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
       {/* <MarketingHeader className="sticky top-0 " /> */}
       <div className="flex-1">{children}</div>
       {/* <MarketingFooter /> */}
-      <MarketingHeader className="sticky bottom-0 " />
+      <MarketingHeader className="fixed bottom-6 self-center" />
     </div>
   )
 }

@@ -1,28 +1,110 @@
+import Image from 'next/image'
+import Link from 'next/link'
+
 import { Container } from '../fragments/container'
 
 export function StackCard() {
   return (
     <Container type="section" className="px-4 md:px-0 md:pb-12">
-      <div className="rounded-xl">
-        <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2">
-          {/* col 1 */}
-          <div className="flex">
-            <div>Img here</div>
-            <div>
-              <h3>Stack</h3>
-              <p>type</p>
+      <ul className="flex flex-col">
+        <li className="flex">
+          <Link
+            href="https://www.example.com"
+            target="_blank"
+            className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
+          >
+            {/* Icon */}
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+              <Image
+                src="/design/vscode.png"
+                alt="vscode logo"
+                width={36}
+                height={36}
+              />
             </div>
-          </div>
-          {/* col 2 */}
-          <div className="flex">
-            <div>Img here</div>
-            <div>
-              <h3>Stack</h3>
-              <p>type</p>
+            {/* Text */}
+            <div className="flex flex-col items-start">
+              <span className="font-bold">Visual Studio Code</span>
+              <span className="text-secondary-foreground">
+                Code editor of choice
+              </span>
             </div>
-          </div>
-        </div>
-      </div>
+          </Link>
+        </li>
+        <li className="flex">
+          <Link
+            href="https://www.example.com"
+            target="_blank"
+            className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
+          >
+            {/* Icon */}
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+              <Image
+                src="/design/figma.png"
+                alt="Figma logo"
+                width={36}
+                height={36}
+              />
+            </div>
+            {/* Text */}
+            <div className="flex flex-col items-start">
+              <span className="font-bold">Figma</span>
+              <span className="text-secondary-foreground">
+                Design tool of choice
+              </span>
+            </div>
+          </Link>
+        </li>
+        <li className="flex">
+          <Link
+            href="https://www.example.com"
+            target="_blank"
+            className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
+          >
+            {/* Icon */}
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+              <Image
+                src="/design/tailwind.png"
+                alt="Figma logo"
+                width={36}
+                height={36}
+              />
+            </div>
+            {/* Text */}
+            <div className="flex flex-col items-start">
+              <span className="font-bold">Tailwind CSS</span>
+              <span className="text-secondary-foreground">
+                Styling framework of choice
+              </span>
+            </div>
+          </Link>
+        </li>
+        <li className="flex">
+          <Link
+            href="https://www.example.com"
+            target="_blank"
+            className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
+          >
+            {/* Icon */}
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+              <Image
+                src="/design/nextjs.png"
+                alt="Figma logo"
+                width={36}
+                height={36}
+                className="fill-white"
+              />
+            </div>
+            {/* Text */}
+            <div className="flex flex-col items-start">
+              <span className="font-bold">Next.js</span>
+              <span className="text-secondary-foreground">
+                Frontend framework
+              </span>
+            </div>
+          </Link>
+        </li>
+      </ul>
     </Container>
   )
 }

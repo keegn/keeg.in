@@ -1,44 +1,57 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { Container } from '../fragments/container'
 
 export function ProductCard() {
   return (
     <Container type="section" className="px-4 md:px-0 md:pb-12">
-      <div className="rounded-xl">
-        <div className="mx-auto grid max-w-xs grid-cols-1 justify-items-center gap-8 sm:max-w-none sm:grid-cols-2">
-          <div>
-            <Image
-              src="/frame.png"
-              alt="Next.js"
-              width={500}
-              height={500}
-              className="w-full rounded-md object-cover sm:w-fit"
-            />
-
-            <p className="pt-2 text-secondary-foreground">Framer Template</p>
-            <p>Brokerage</p>
-            <p>
-              <p>Coming 2023</p>
-            </p>
-          </div>
-          <div>
-            <div>
+      <ul className="flex flex-col">
+        <li className="flex">
+          <Link
+            href="https://www.example.com"
+            target="_blank"
+            className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
+          >
+            {/* Icon */}
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
-                src="/test.jpg"
-                alt="Next.js"
-                width={500}
-                height={500}
-                className="w-full rounded-md object-cover sm:w-fit"
+                src="/design/framer.webp"
+                alt="vscode logo"
+                width={36}
+                height={36}
               />
             </div>
-
-            <p className="pt-2 text-secondary-foreground">B2B SaaS</p>
-            <p>Stealth</p>
-            <p>Coming 2023</p>
-          </div>
-        </div>
-      </div>
+            {/* Text */}
+            <div className="flex flex-col items-start">
+              <span className="font-bold">Framer Template</span>
+              <span className="text-secondary-foreground">Coming soon</span>
+            </div>
+          </Link>
+        </li>
+        <li className="flex">
+          <Link
+            href="https://www.example.com"
+            target="_blank"
+            className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
+          >
+            {/* Icon */}
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+              <Image
+                src="/design/b2bsaas.png"
+                alt="Figma logo"
+                width={36}
+                height={36}
+              />
+            </div>
+            {/* Text */}
+            <div className="flex flex-col items-start">
+              <span className="font-bold">B2B SaaS</span>
+              <span className="text-secondary-foreground">Coming 2023</span>
+            </div>
+          </Link>
+        </li>
+      </ul>
     </Container>
   )
 }

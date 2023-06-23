@@ -16,8 +16,10 @@ export function PageHero({
     <>
       <Container type="section" className="py-12 md:py-12">
         <div className="flex flex-col items-center gap-4 md:gap-6">
-          <Badge variant={'outline'}>{subtitle}</Badge>
-          <p className="mx-auto max-w-2xl bg-gradient-to-br from-foreground to-muted-foreground bg-clip-text text-center text-xl text-transparent   md:text-4xl">
+          <Badge className="dark:bg-zinc-900" variant={'outline'}>
+            {subtitle}
+          </Badge>
+          <p className="mx-auto max-w-2xl bg-gradient-to-tl from-foreground to-muted-foreground bg-clip-text text-center text-xl text-transparent   md:text-4xl">
             <Balancer>{title}</Balancer>
           </p>
         </div>

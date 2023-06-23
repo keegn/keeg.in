@@ -29,13 +29,6 @@ export function ContentCard() {
                 I am available for consulting work on a limited basis. If you
                 are interested in working together, please reach out.
               </p>
-              <div className="mt-4 flex w-fit items-center space-x-2 rounded-full bg-secondary px-3 py-1">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-foreground opacity-75"></span>
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-primary-foreground"></span>
-                </span>
-                <p className="text-sm text-secondary-foreground">Available</p>
-              </div>
             </div>
           </div>
         </div>

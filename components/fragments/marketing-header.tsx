@@ -9,7 +9,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { Container } from '@/components/fragments/container'
 import { NavTabs } from '@/components/fragments/nav-tabs'
-import { ModeToggle } from './mode-toggle'
 
 // function MobileNavIcon({ open }: { open: boolean }) {
 //   console.log('open', open)
@@ -84,34 +83,9 @@ export function MarketingHeader({ className }: { className?: string }) {
   return (
     <>
       <header className={cn('', hasScrolled && 'transition-all', className)}>
-        <Container type="nav">
-          <div className="mx-auto flex w-[360px] items-center justify-between space-x-6 rounded-full border border-gray-100 bg-white/70 px-3 py-2 shadow-header-shadow backdrop-blur-lg dark:border-zinc-950 dark:bg-primary/10 md:px-4">
-            {/* LEFT NAV */}
-            <span className="flex items-center rounded-full bg-zinc-50">
-              <Link href="/" className="text-3xl text-primary-foreground">
-                ✺
-              </Link>
-            </span>
-            {/* MIDDLE NAV */}
-            <div className="col-span-1 flex space-x-6 justify-self-center">
-              <div className="flex">
-                <NavTabs />
-              </div>
-            </div>
-
-            {/* RIGHT NAV */}
-            <div className="col-span-1 flex items-center space-x-3 justify-self-end">
-              <ModeToggle />
-
-              {/* <div
-                className="cursor-pointer px-4 lg:hidden"
-                onClick={() => setMobileNavOpen(!mobileNavOpen)}
-              >
-                <MobileNavIcon open={mobileNavOpen} />
-              </div> */}
-            </div>
-          </div>
-        </Container>
+        <div className="mx-auto flex justify-between rounded-full border border-zinc-400/20 bg-white/70 shadow-header-shadow backdrop-blur-lg dark:border-zinc-200/10 dark:bg-zinc-500/20">
+          <NavTabs />
+        </div>
       </header>
 
       {/* <MobileNav

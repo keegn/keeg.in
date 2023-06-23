@@ -1,18 +1,18 @@
-import { Divider } from '@/components/fragments/divider'
+import { BgRay } from '@/components/fragments/bg-ray'
 import { ContentCard } from '@/components/sections/content-card'
 import { PageHero } from '@/components/sections/home-hero'
 
 export default function Home() {
   return (
     <>
-      {/* <GridBackground /> */}
+      <BgRay />
       <PageHero
         title={
           'A detail oriented frontend software engineer who cares about craft.'
         }
         subtitle={'Welcome'}
       />
-      <Divider />
+
       {/* <TestContent /> */}
       <ContentCard />
     </>
