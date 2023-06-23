@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import { Badge } from '@/components/ui/badge'
 import { Container } from '../fragments/container'
 
 export function ProductCard() {
@@ -10,7 +9,7 @@ export function ProductCard() {
         <div className="mx-auto grid max-w-xs grid-cols-1 justify-items-center gap-8 sm:max-w-none sm:grid-cols-2">
           <div>
             <Image
-              src="/test.jpg"
+              src="/frame.png"
               alt="Next.js"
               width={500}
               height={500}

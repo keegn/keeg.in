@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { useLockBody } from '@/hooks/use-lock-body'
 import { AnimatePresence, motion } from 'framer-motion'
 
-import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
 import { Container } from '@/components/fragments/container'
 import { NavTabs } from '@/components/fragments/nav-tabs'
