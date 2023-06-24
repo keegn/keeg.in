@@ -5,19 +5,13 @@ import Balancer from 'react-wrap-balancer'
 import { Container } from '@/components/fragments/container'
 import { Badge } from '@/components/ui/badge'
 
-export function PageHero({
-  title,
-  subtitle,
-}: {
-  title: string
-  subtitle: string
-}) {
+export function Hero({ pretitle, title }: { pretitle: string; title: string }) {
   return (
     <>
       <Container type="section" className="py-12 md:py-12">
         <div className="flex flex-col items-center gap-4 md:gap-6">
           <Badge className="dark:bg-zinc-900" variant={'outline'}>
-            {subtitle}
+            {pretitle}
           </Badge>
           <p className="mx-auto max-w-2xl bg-gradient-to-tl from-foreground to-muted-foreground bg-clip-text text-center text-xl text-transparent   md:text-4xl">
             <Balancer>{title}</Balancer>

@@ -1,4 +1,4 @@
-import { ModeToggle } from './mode-toggle'
+import { ModeToggle } from '../fragments/mode-toggle'
 
 export function TailwindIndicator() {
   if (process.env.NODE_ENV === 'production') return null
