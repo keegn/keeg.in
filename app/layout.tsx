@@ -1,12 +1,11 @@
 import '@/styles/globals.css'
 
-import { Inter } from 'next/font/google'
+// we can also use css variables instead https://nextjs.org/docs/app/building-your-application/optimizing/fonts
+import { inter } from '@/app/fonts'
 
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/fragments/theme-provider'
 import { TailwindIndicator } from '@/components/ui/tailwind-indicator'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',

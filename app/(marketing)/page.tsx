@@ -7,10 +7,7 @@ export default function Home() {
     <>
       <BgRay />
       <Hero
-        pretitle={'Welcome'}
-        title={
-          'A detail oriented frontend software engineer who cares about craft.'
-        }
+        title={'Product designer and engineer creating internet software.'}
       />
       <ContentCard />
     </>

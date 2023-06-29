@@ -5,7 +5,7 @@ import { Container } from '../fragments/container'
 
 export function StackCard() {
   return (
-    <Container type="section" className="px-4 md:px-0 md:pb-12">
+    <Container type="section" className="pb-24">
       <ul className="flex flex-col">
         <li className="flex">
           <Link
