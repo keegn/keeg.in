@@ -6,7 +6,7 @@ export default function Products() {
   return (
     <>
       <BgRay />
-      <Hero pretitle={'Products'} title={`Software & Templates`} />
+      <Hero title={`Software & Templates`} />
       <ProductCard />
     </>
   )

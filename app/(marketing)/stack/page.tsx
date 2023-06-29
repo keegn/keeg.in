@@ -6,7 +6,7 @@ export default function Stack() {
   return (
     <>
       <BgRay />
-      <Hero pretitle={'Stack'} title={`Tools & Products`} />
+      <Hero title={`Tools & Products`} />
       <StackCard />
     </>
   )

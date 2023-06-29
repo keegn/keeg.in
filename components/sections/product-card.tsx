@@ -27,8 +27,10 @@ export function ProductCard() {
             </div>
             {/* Text */}
             <div className="flex flex-col items-start">
-              <span className="font-bold">Framer Template</span>
-              <span className="text-secondary-foreground">Coming soon</span>
+              <span>Framer Template</span>
+              <span className="text-sm text-secondary-foreground ">
+                Coming soon
+              </span>
             </div>
           </div>
           {/* </Link> */}
@@ -51,8 +53,10 @@ export function ProductCard() {
             </div>
             {/* Text */}
             <div className="flex flex-col items-start">
-              <span className="font-bold">B2B SaaS</span>
-              <span className="text-secondary-foreground">Coming 2023</span>
+              <span>B2B SaaS</span>
+              <span className="text-sm text-secondary-foreground">
+                Coming 2023
+              </span>
             </div>
           </div>
           {/* </Link> */}

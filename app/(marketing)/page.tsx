@@ -8,6 +8,8 @@ export default function Home() {
       <BgRay />
       <Hero
         title={'Product designer and engineer creating internet software.'}
+        includeUpdatedAt
+        includeImage
       />
       <ContentCard />
     </>

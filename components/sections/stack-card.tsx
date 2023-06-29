@@ -24,8 +24,8 @@ export function StackCard() {
             </div>
             {/* Text */}
             <div className="flex flex-col items-start">
-              <span className="font-bold">Figma</span>
-              <span className="text-secondary-foreground">
+              <span>Figma</span>
+              <span className="text-sm text-secondary-foreground">
                 Design tool of choice
               </span>
             </div>
@@ -48,8 +48,8 @@ export function StackCard() {
             </div>
             {/* Text */}
             <div className="flex flex-col items-start">
-              <span className="font-bold">Tailwind CSS</span>
-              <span className="text-secondary-foreground">
+              <span>Tailwind CSS</span>
+              <span className="text-sm text-secondary-foreground">
                 Styling framework of choice
               </span>
             </div>
@@ -72,8 +72,8 @@ export function StackCard() {
             </div>
             {/* Text */}
             <div className="flex flex-col items-start">
-              <span className="font-bold">Visual Studio Code</span>
-              <span className="text-secondary-foreground">
+              <span>Visual Studio Code</span>
+              <span className="text-sm text-secondary-foreground">
                 Code editor of choice
               </span>
             </div>
@@ -97,8 +97,8 @@ export function StackCard() {
             </div>
             {/* Text */}
             <div className="flex flex-col items-start">
-              <span className="font-bold">Next.js</span>
-              <span className="text-secondary-foreground">
+              <span>Next.js</span>
+              <span className="text-sm text-secondary-foreground">
                 Frontend framework
               </span>
             </div>
@@ -122,7 +122,7 @@ export function StackCard() {
             </div>
             {/* Text */}
             <div className="flex flex-col items-start">
-              <span className="font-bold">Planetscale</span>
+              <span>Planetscale</span>
               <span className="text-secondary-foreground">
                 Serverless MySQL database
               </span>
@@ -147,8 +147,8 @@ export function StackCard() {
             </div>
             {/* Text */}
             <div className="flex flex-col items-start">
-              <span className="font-bold">OpenAI</span>
-              <span className="text-secondary-foreground">LLM API</span>
+              <span>OpenAI</span>
+              <span className="text-sm text-secondary-foreground">LLM API</span>
             </div>
           </Link>
         </li>
@@ -170,8 +170,8 @@ export function StackCard() {
             </div>
             {/* Text */}
             <div className="flex flex-col items-start">
-              <span className="font-bold">OpenAI</span>
-              <span className="text-secondary-foreground">LLM API</span>
+              <span>OpenAI</span>
+              <span className="text-sm text-secondary-foreground">LLM API</span>
             </div>
           </Link>
         </li>

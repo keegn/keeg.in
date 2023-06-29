@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import { FADE_DOWN_ANIMATION_VARIANTS } from '@/lib/constants'
 import { Container } from '@/components/fragments/container'
 import { ExpandingArrow } from '@/components/ui/expanding-arrow'
-import { FullGrid } from '@/components/ui/full-grid'
+import { FullGrid } from '@/components/fragments/full-grid'
 
 export function TestContent() {
   return (
