@@ -1,7 +1,6 @@
 import '@/styles/globals.css'
 
-// we can also use css variables instead https://nextjs.org/docs/app/building-your-application/optimizing/fonts
-import { inter } from '@/app/fonts'
+import { fontHeading, fontSans } from '@/app/fonts'
 
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/fragments/theme-provider'
@@ -22,7 +21,8 @@ export default function RootLayout({
       <body
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
-          inter.className
+          fontHeading.variable,
+          fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

@@ -6,7 +6,7 @@ export function ContentCard() {
       <div className="rounded-xl">
         <div className="grid auto-rows-auto gap-12">
           <div className="grid grid-cols-1 gap-3">
-            <p className="text-secondary-foreground">Intro</p>
+            <p className="text-tertiary-foreground">Intro</p>
             <p>
               Currently focused on designing and building wonderful internet
               companies. Previously founding team at Paytient, a new way to pay
@@ -15,7 +15,7 @@ export function ContentCard() {
           </div>
 
           <div className="grid grid-cols-1 gap-3">
-            <p className=" text-secondary-foreground">Availability</p>
+            <p className=" text-tertiary-foreground">Availability</p>
 
             <p>
               I have limited availability and occasionally take on engagements.

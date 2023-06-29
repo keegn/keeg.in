@@ -69,4 +69,5 @@ export const Icons = {
   ),
   twitter: Twitter,
   check: Check,
+  command: Command,
 }

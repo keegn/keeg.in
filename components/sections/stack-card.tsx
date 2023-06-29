@@ -25,7 +25,7 @@ export function StackCard() {
             {/* Text */}
             <div className="flex flex-col items-start">
               <span>Figma</span>
-              <span className="text-sm text-secondary-foreground">
+              <span className="text-sm text-tertiary-foreground">
                 Design tool of choice
               </span>
             </div>
@@ -49,7 +49,7 @@ export function StackCard() {
             {/* Text */}
             <div className="flex flex-col items-start">
               <span>Tailwind CSS</span>
-              <span className="text-sm text-secondary-foreground">
+              <span className="text-sm text-tertiary-foreground">
                 Styling framework of choice
               </span>
             </div>
@@ -73,7 +73,7 @@ export function StackCard() {
             {/* Text */}
             <div className="flex flex-col items-start">
               <span>Visual Studio Code</span>
-              <span className="text-sm text-secondary-foreground">
+              <span className="text-sm text-tertiary-foreground">
                 Code editor of choice
               </span>
             </div>
@@ -98,7 +98,7 @@ export function StackCard() {
             {/* Text */}
             <div className="flex flex-col items-start">
               <span>Next.js</span>
-              <span className="text-sm text-secondary-foreground">
+              <span className="text-sm text-tertiary-foreground">
                 Frontend framework
               </span>
             </div>
@@ -123,7 +123,7 @@ export function StackCard() {
             {/* Text */}
             <div className="flex flex-col items-start">
               <span>Planetscale</span>
-              <span className="text-secondary-foreground">
+              <span className="text-tertiary-foreground">
                 Serverless MySQL database
               </span>
             </div>
@@ -148,7 +148,7 @@ export function StackCard() {
             {/* Text */}
             <div className="flex flex-col items-start">
               <span>OpenAI</span>
-              <span className="text-sm text-secondary-foreground">LLM API</span>
+              <span className="text-sm text-tertiary-foreground">LLM API</span>
             </div>
           </Link>
         </li>
@@ -171,7 +171,7 @@ export function StackCard() {
             {/* Text */}
             <div className="flex flex-col items-start">
               <span>OpenAI</span>
-              <span className="text-sm text-secondary-foreground">LLM API</span>
+              <span className="text-sm text-tertiary-foreground">LLM API</span>
             </div>
           </Link>
         </li>
