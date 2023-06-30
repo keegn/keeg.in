@@ -26,7 +26,7 @@ export function StackCard() {
             <div className="flex flex-col items-start">
               <span>Figma</span>
               <span className="text-sm text-tertiary-foreground">
-                Design tool of choice
+                Design tool
               </span>
             </div>
           </Link>
@@ -50,7 +50,7 @@ export function StackCard() {
             <div className="flex flex-col items-start">
               <span>Tailwind CSS</span>
               <span className="text-sm text-tertiary-foreground">
-                Styling framework of choice
+                Styling framework
               </span>
             </div>
           </Link>
@@ -74,7 +74,7 @@ export function StackCard() {
             <div className="flex flex-col items-start">
               <span>Visual Studio Code</span>
               <span className="text-sm text-tertiary-foreground">
-                Code editor of choice
+                Code editor
               </span>
             </div>
           </Link>
