@@ -123,7 +123,7 @@ export function StackCard() {
             {/* Text */}
             <div className="flex flex-col items-start">
               <span>Planetscale</span>
-              <span className="text-tertiary-foreground">
+              <span className="text-sm text-tertiary-foreground">
                 Serverless MySQL database
               </span>
             </div>
