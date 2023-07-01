@@ -21,7 +21,7 @@ export function ContentCard() {
               I have limited availability and occasionally take on engagements.
               If you&apos;re a founder or an early stage startup looking to
               consult regarding design, frontend engineering or product strategy
-              — please reach out via email.
+              — please reach out.
             </p>
           </div>
         </div>
