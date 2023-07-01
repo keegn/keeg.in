@@ -118,7 +118,7 @@ export function StackCard() {
         </li>{' '}
         <li className="flex">
           <Link
-            href="https://www.planetscale.com"
+            href="https://www.prisma.io"
             target="_blank"
             className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
           >
