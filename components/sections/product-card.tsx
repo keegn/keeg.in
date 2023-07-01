@@ -1,6 +1,6 @@
 import Image from 'next/image'
-
-// import Link from 'next/link'
+import stealthB2BSaaS from '@/public/design/b2bsaas.png'
+import framerLogo from '@/public/design/framer.webp'
 
 import { Container } from '../fragments/container'
 
@@ -13,10 +13,11 @@ export function ProductCard() {
             {/* Icon */}
             <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
-                src="/design/framer.webp"
+                src={framerLogo}
                 alt="Framer logo"
                 width={36}
                 height={36}
+                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -34,10 +35,11 @@ export function ProductCard() {
             {/* Icon */}
             <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
-                src="/design/b2bsaas.png"
-                alt="Figma logo"
+                src={stealthB2BSaaS}
+                alt="Stealth B2B SaaS logo"
                 width={36}
                 height={36}
+                placeholder="blur"
               />
             </div>
             {/* Text */}

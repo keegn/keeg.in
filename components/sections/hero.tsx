@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import profilePic from '@/public/design/Keegan-Burkett.jpeg'
 import Balancer from 'react-wrap-balancer'
 
 import { cn } from '@/lib/utils'
@@ -20,11 +21,12 @@ export function Hero({
         {includeImage && (
           <div className="mb-8 flex items-center justify-between">
             <Image
-              src="/design/Keegan-Burkett.jpeg"
-              alt="Hero"
+              src={profilePic}
+              alt="Keegn Burkett profile picture"
               width={32}
               height={32}
               className="rounded-full"
+              placeholder="blur"
             />
             <CommandMenu />
           </div>

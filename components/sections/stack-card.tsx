@@ -1,5 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import figmaLogo from '@/public/design/figma.png'
+import nextLogo from '@/public/design/nextjs.png'
+import openAILight from '@/public/design/openai-light.png'
+import openAIDark from '@/public/design/openai.png'
+import planetscale from '@/public/design/planetscale.png'
+import tailwindLogo from '@/public/design/tailwind.png'
+import vscodeLogo from '@/public/design/vscode.png'
 
 import { Container } from '../fragments/container'
 
@@ -16,10 +23,11 @@ export function StackCard() {
             {/* Icon */}
             <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
-                src="/design/figma.png"
+                src={figmaLogo}
                 alt="Figma logo"
                 width={36}
                 height={36}
+                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -40,10 +48,11 @@ export function StackCard() {
             {/* Icon */}
             <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
-                src="/design/tailwind.png"
+                src={tailwindLogo}
                 alt="Tailwind CSS logo"
                 width={36}
                 height={36}
+                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -64,10 +73,11 @@ export function StackCard() {
             {/* Icon */}
             <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
-                src="/design/vscode.png"
+                src={vscodeLogo}
                 alt="vscode logo"
                 width={36}
                 height={36}
+                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -88,11 +98,12 @@ export function StackCard() {
             {/* Icon */}
             <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
-                src="/design/nextjs.png"
+                src={nextLogo}
                 alt="Next.js logo"
                 width={36}
                 height={36}
                 className="fill-white"
+                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -113,11 +124,12 @@ export function StackCard() {
             {/* Icon */}
             <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
-                src="/design/planetscale.png"
+                src={planetscale}
                 alt="PlanetScale logo"
                 width={36}
                 height={36}
                 className="fill-white"
+                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -138,11 +150,12 @@ export function StackCard() {
             {/* Icon */}
             <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md  bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
-                src="/design/openai-white-logomark.png"
+                src={openAILight}
                 alt="Open AI logo"
                 width={36}
                 height={36}
                 className="fill-white"
+                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -161,11 +174,12 @@ export function StackCard() {
             {/* Icon */}
             <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md  bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
-                src="/design/openai-logomark.png"
+                src={openAIDark}
                 alt="Open AI logo"
                 width={36}
                 height={36}
                 className="fill-white"
+                placeholder="blur"
               />
             </div>
             {/* Text */}
