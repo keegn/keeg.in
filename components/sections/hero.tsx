@@ -17,7 +17,7 @@ export function Hero({
 }) {
   return (
     <>
-      <Container type="section" className="pb-12 pt-24">
+      <Container type="section" className="pb-12 pt-8 sm:pt-24">
         {includeImage && (
           <div className="mb-8 flex items-center justify-between">
             <Image
@@ -25,7 +25,7 @@ export function Hero({
               alt="Keegn Burkett profile picture"
               width={32}
               height={32}
-              className="rounded-full"
+              className="my-[2px] rounded-full"
               placeholder="blur"
             />
             <CommandMenu />
@@ -36,7 +36,7 @@ export function Hero({
           {includeImage ? (
             <p
               className={cn(
-                'bg-clip-text text-left font-heading text-3xl italic text-primary-foreground  md:text-4xl'
+                'bg-clip-text text-left font-heading text-3xl italic text-primary-foreground'
               )}
             >
               <Balancer>{title}</Balancer>
@@ -45,7 +45,7 @@ export function Hero({
             <div className="flex w-full items-center justify-between">
               <p
                 className={cn(
-                  'bg-clip-text text-left font-heading text-3xl italic text-primary-foreground  md:text-4xl'
+                  'bg-clip-text text-left font-heading text-3xl italic text-primary-foreground'
                 )}
               >
                 <Balancer>{title}</Balancer>
