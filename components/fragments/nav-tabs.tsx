@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 
 export function NavTabs() {
   const path = usePathname()
-  console.log(path)
+
   return (
     <div className="flex items-end justify-center p-2">
       {siteConfig.navLinks.map((link) => (
