@@ -6,6 +6,7 @@ import { fontHeading, fontSans } from '@/app/fonts'
 import { Analytics } from '@vercel/analytics/react'
 
 import { cn } from '@/lib/utils'
+import Cline from '@/components/fragments/cline'
 import { ThemeProvider } from '@/components/fragments/theme-provider'
 import { TailwindIndicator } from '@/components/ui/tailwind-indicator'
 
@@ -60,12 +61,12 @@ export default function RootLayout({
           <TailwindIndicator />
         </ThemeProvider>
         <Analytics />
+        <Cline />
         <Script
           id="cline"
           src="https://cdn.jsdelivr.net/npm/cline-client-script/cline.min.js"
-          strategy="worker"
         />
-        <Script id="cline-page-id" strategy="worker">
+        <Script id="cline-page-id">
           {`window.EXPERIMENT_PAGE_ID="64ed658c2c5871d93b500ac2";`}
         </Script>
       </body>
