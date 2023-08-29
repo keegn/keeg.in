@@ -63,9 +63,9 @@ export default function RootLayout({
         <Script
           id="cline"
           src="https://cdn.jsdelivr.net/npm/cline-client-script/cline.min.js"
-          strategy="beforeInteractive"
+          strategy="worker"
         />
-        <Script id="cline-page-id" strategy="beforeInteractive">
+        <Script id="cline-page-id" strategy="worker">
           {`window.EXPERIMENT_PAGE_ID="64ed658c2c5871d93b500ac2";`}
         </Script>
       </body>
