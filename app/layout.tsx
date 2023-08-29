@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 
 import type { Metadata } from 'next'
-// import Script from 'next/script'
+import Script from 'next/script'
 import { fontHeading, fontSans } from '@/app/fonts'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -60,6 +60,10 @@ export default function RootLayout({
           <TailwindIndicator />
         </ThemeProvider>
         <Analytics />
+        <Script id="coframe">
+          {`window.COFRAME_PAGE_ID="489544d0c9295b1a51a6898d";`}
+        </Script>
+        <Script src="https://cdn.jsdelivr.net/npm/coframe-ai/dist/cf.min.js" />
       </body>
     </html>
   )
