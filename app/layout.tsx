@@ -62,10 +62,10 @@ export default function RootLayout({
         <Analytics />
         <Script
           id="cline"
-          src="https://cdn.jsdelivr.net/npm/cline-client-script/cline.min.js?v=1"
+          src="https://cdn.jsdelivr.net/npm/cline-client-script/cline.min.js"
         />
         <Script id="cline-page-id">
-          {`window.EXPERIMENT_PAGE_ID="64f35b40bcf0a246e513e04c";`}
+          {`window.EXPERIMENT_PAGE_ID="64f35da7bcf0a246e513e192";`}
         </Script>
       </body>
     </html>
