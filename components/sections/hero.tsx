@@ -10,10 +10,12 @@ export function Hero({
   title,
   includeUpdatedAt,
   includeImage,
+  testTrackConversion,
 }: {
   title: string
   includeUpdatedAt?: boolean
   includeImage?: boolean
+  testTrackConversion?: () => void
 }) {
   return (
     <>
