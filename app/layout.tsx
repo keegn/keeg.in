@@ -6,6 +6,7 @@ import Script from 'next/script'
 import { fontHeading, fontSans } from '@/app/fonts'
 import { Analytics } from '@vercel/analytics/react'
 
+import { Cline } from '@/lib/cline'
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/fragments/theme-provider'
 import { TailwindIndicator } from '@/components/ui/tailwind-indicator'
@@ -49,15 +50,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Script id="cline-site-id" strategy="beforeInteractive">
-        {`window.EXPERIMENT_SITE_ID="6504850a6a495dff64656521";`}
-      </Script>
-      <Script
-        id="cline"
-        strategy="beforeInteractive"
-        src="https://cdn.jsdelivr.net/npm/cline-client-script/cline.min.js"
-      />
-
+      <Cline />
       <body
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
