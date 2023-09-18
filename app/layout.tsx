@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 
 import type { Metadata } from 'next'
+import Head from 'next/head'
 import Script from 'next/script'
 import { fontHeading, fontSans } from '@/app/fonts'
 import { Analytics } from '@vercel/analytics/react'
@@ -48,15 +49,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <Script id="cline-site-id">
-          {`window.EXPERIMENT_SITE_ID="6504850a6a495dff64656521";`}
-        </Script>
-        <Script
-          id="cline"
-          src="https://cdn.jsdelivr.net/npm/cline-client-script/cline.min.js"
-        />
-      </head>
+      <Script id="cline-site-id" strategy="beforeInteractive">
+        {`window.EXPERIMENT_SITE_ID="6504850a6a495dff64656521";`}
+      </Script>
+      <Script
+        id="cline"
+        strategy="beforeInteractive"
+        src="https://cdn.jsdelivr.net/npm/cline-client-script/cline.min.js"
+      />
+
       <body
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
