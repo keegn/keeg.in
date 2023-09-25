@@ -49,7 +49,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Cline />
       <Script
         type="text/javascript"
         src="//cdn-4.convertexperiments.com/js/10043034-10044191.js"
@@ -66,6 +65,7 @@ export default function RootLayout({
           <TailwindIndicator />
         </ThemeProvider>
         <Analytics />
+        <Cline />
       </body>
     </html>
   )
