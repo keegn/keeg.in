@@ -1,12 +1,10 @@
 import '@/styles/globals.css'
 
 import type { Metadata } from 'next'
-import Head from 'next/head'
-import Script from 'next/script'
 import { fontHeading, fontSans } from '@/app/fonts'
 import { Analytics } from '@vercel/analytics/react'
 
-import { Cline } from '@/lib/cline'
+import Cline from '@/lib/cline'
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/fragments/theme-provider'
 import { TailwindIndicator } from '@/components/ui/tailwind-indicator'

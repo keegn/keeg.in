@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import profilePic from '@/public/design/Keegan-Burkett.jpeg'
 import Balancer from 'react-wrap-balancer'
@@ -10,13 +12,17 @@ export function Hero({
   title,
   includeUpdatedAt,
   includeImage,
-  testTrackConversion,
 }: {
   title: string
   includeUpdatedAt?: boolean
   includeImage?: boolean
-  testTrackConversion?: () => void
 }) {
+  const handleTrackConversion = () => {
+    // Ensure the function exists before calling it
+    if (typeof window.trackConversion === 'function') {
+      window.trackConversion()
+    }
+  }
   return (
     <>
       <Container type="section" className="pb-12 pt-8 sm:pt-24">
@@ -41,7 +47,7 @@ export function Hero({
                 'bg-clip-text text-left font-heading text-3xl italic text-primary-foreground'
               )}
             >
-              <Balancer>{title}</Balancer>
+              <Balancer onClick={handleTrackConversion}>{title}</Balancer>
             </p>
           ) : (
             <div className="flex w-full items-center justify-between">
@@ -50,7 +56,7 @@ export function Hero({
                   'bg-clip-text text-left font-heading text-3xl italic text-primary-foreground'
                 )}
               >
-                <Balancer>{title}</Balancer>
+                <Balancer onClick={handleTrackConversion}>{title}</Balancer>
               </p>
               <CommandMenu />
             </div>
