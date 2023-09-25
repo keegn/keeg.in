@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { fontHeading, fontSans } from '@/app/fonts'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -49,6 +50,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <Cline />
+      <Script
+        type="text/javascript"
+        src="//cdn-4.convertexperiments.com/js/10043034-10044191.js"
+      />
       <body
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
