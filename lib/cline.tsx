@@ -1,18 +1,23 @@
 'use client'
 
+import React, { useEffect, useState } from 'react'
 import Script from 'next/script'
 
-export const Cline = () => {
+export default function Cline() {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  if (!isClient) return null
+
   return (
     <>
-      <Script id="cline-site-id" strategy="beforeInteractive">
-        {`window.EXPERIMENT_SITE_ID="6504850a6a495dff64656521";`}
+      <Script id="cline-site-id">
+        {`window.EXPERIMENT_SITE_ID="650994c56a495dff64657053";`}
       </Script>
-      <Script
-        id="cline"
-        strategy="beforeInteractive"
-        src="https://cdn.jsdelivr.net/npm/cline-client-script/cline.min.js"
-      />
+      <Script src="https://cdn.jsdelivr.net/npm/cline-client-script/cline.min.js?v=203" />
     </>
   )
 }
