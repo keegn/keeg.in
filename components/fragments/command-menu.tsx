@@ -47,7 +47,7 @@ export function CommandMenu({ ...props }: CommandMenuProps) {
     <>
       {props.withoutInitialUI ? null : (
         <Icons.command
-          className="w-6 cursor-pointer text-tertiary-foreground"
+          className="w-5 cursor-pointer text-tertiary-foreground"
           strokeWidth={1.5}
           onClick={() => setOpen(true)}
         />
