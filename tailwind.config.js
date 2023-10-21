@@ -21,6 +21,7 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         heading: ['var(--font-heading)', ...fontFamily.serif],
+        inter: ['var(--font-inter)', ...fontFamily.sans],
       },
       boxShadow: {
         'header-shadow': '0 10px 30px 0 rgba(0,0,0,.04)',

@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 
 import type { Metadata } from 'next'
-import { fontHeading, fontSans } from '@/app/fonts'
+import { fontHeading, fontSans, inter } from '@/app/fonts'
 import { Analytics } from '@vercel/analytics/react'
 
 import { cn } from '@/lib/utils'
@@ -51,7 +51,8 @@ export default function RootLayout({
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
           fontHeading.variable,
-          fontSans.variable
+          fontSans.variable,
+          inter.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

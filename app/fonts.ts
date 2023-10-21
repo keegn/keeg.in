@@ -4,6 +4,7 @@ import localFont from 'next/font/local'
 export const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-inter',
 })
 export const newsreader = Newsreader({
   subsets: ['latin'],
