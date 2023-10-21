@@ -57,7 +57,7 @@ export function Hero({
           {includeUpdatedAt && (
             <div className="flex flex-col space-y-2">
               <small className="text-xs leading-3 tracking-tight text-tertiary-foreground">
-                Last updated at June 29, 2023 at 3:45 PM.
+                Last updated at Oct 21, 2023 at 3:08 PM.
               </small>
               <small className="text-xs leading-3 tracking-tight text-tertiary-foreground">
                 © 2023 Keegan Burkett.
