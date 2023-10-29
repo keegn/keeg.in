@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Hero
-        title={'Product designer and engineer creating internet software.'}
+        title={'Product engineer creating internet software.'}
         includeUpdatedAt
         includeImage
       />
