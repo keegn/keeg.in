@@ -9,7 +9,7 @@ import tailwindLogo from '@/public/design/tailwind.png'
 import vscodeLogo from '@/public/design/vscode.png'
 import prisma from '@/public/stack/stack-2.webp'
 
-import { Container } from '../fragments/container'
+import { Container } from '@/components/fragments/container'
 
 export function StackCard() {
   return (
