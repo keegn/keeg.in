@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { fontHeading, fontSans, inter } from '@/app/fonts'
 import { Analytics } from '@vercel/analytics/react'
 
+import Cline from '@/lib/cline'
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/fragments/theme-provider'
 import { TailwindIndicator } from '@/components/ui/tailwind-indicator'
@@ -60,6 +61,7 @@ export default function RootLayout({
           <TailwindIndicator />
         </ThemeProvider>
         <Analytics />
+        <Cline />
       </body>
     </html>
   )
