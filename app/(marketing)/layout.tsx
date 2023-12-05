@@ -1,4 +1,4 @@
-import { BgRay } from '@/components/fragments/bg-ray'
+// import { BgRay } from '@/components/fragments/bg-ray'
 import { NavIsland } from '@/components/fragments/nav-island'
 
 interface MarketingLayoutProps {
@@ -9,7 +9,7 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
       <div className="flex-1">
-        <BgRay />
+        {/* <BgRay /> */}
         {children}
       </div>
       <NavIsland className="fixed bottom-6 self-center" />
