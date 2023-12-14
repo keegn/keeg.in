@@ -45,7 +45,7 @@ export async function POST(request: Request) {
   })
 
   // await resend.emails.send({
-  //   from: 'noreply@recopyai.com',
+  //   from: 'noreply@keeg.in',
   //   to: email,
   //   subject: '🤖 Thanks for signing up for RecopyAI early access!',
   //   react: MailingListConfirmation({ firstName }),
