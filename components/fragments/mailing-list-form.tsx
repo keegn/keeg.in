@@ -1,14 +1,14 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useToast } from '@/hooks/use-toast'
+import { useTheme } from 'next-themes'
 import { SubmitHandler, useForm } from 'react-hook-form'
 
-import { cn } from '@/lib/utils'
+import { Container } from '@/components/fragments/container'
 import { LoadingDots } from '@/components/fragments/loading-dots'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
 
 interface FormInputProps {
   honey?: string
@@ -21,7 +21,9 @@ interface FormInputProps {
 interface AccessModalProps {}
 
 export function MailingListForm({}: AccessModalProps) {
-  const [open, setOpen] = useState(false)
+  const { theme } = useTheme()
+  const [, setOpen] = useState(false)
+  const [hasSubmitted, setHasSubmitted] = useState(false)
   const { toast } = useToast()
   const {
     register,
@@ -31,10 +33,21 @@ export function MailingListForm({}: AccessModalProps) {
     formState: { errors, isSubmitting },
   } = useForm<FormInputProps>()
 
+  useEffect(() => {
+    // Check if the form was already submitted in this session
+    const submitted = sessionStorage.getItem('formSubmitted')
+    if (submitted) {
+      setHasSubmitted(true)
+    }
+  }, [])
+
   const onSubmit: SubmitHandler<FormInputProps> = async (data) => {
     if (getValues().honey) {
       return
     }
+
+    setHasSubmitted(true)
+    sessionStorage.setItem('formSubmitted', 'true')
 
     try {
       let response = await fetch('/api/forms/mailing-list', {
@@ -63,32 +76,60 @@ export function MailingListForm({}: AccessModalProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input
-        id="honey"
-        type="hidden"
-        {...register('honey')}
-        placeholder="Some text here"
-        className="block w-full appearance-none rounded-sm border border-gray-300 px-3 py-2 placeholder-gray-400 transition duration-200 ease-in-out focus:border-black focus:outline-none focus:ring-black sm:text-sm"
-      />
-      <div className="grid gap-6 py-4">
-        <div className="grid grid-cols-1 justify-items-start gap-2">
-          <Label className="text-right">Email address</Label>
-          <Input
-            type="email"
-            placeholder="Your work email address"
-            {...register('email', { required: true })}
-          />
+    <Container type="section" className="-mt-12 pb-36">
+      <div className="rounded-xl">
+        <div className="grid auto-rows-auto gap-12">
+          <div className="grid grid-cols-1 gap-3">
+            <p className="text-tertiary-foreground">Newsletter</p>
+            <p>
+              Interesting internet finds, practical software and life tips, plus
+              updates on my latest projects. Sent once per month.
+            </p>
+            <form onSubmit={handleSubmit(onSubmit)} className="w-full">
+              <input
+                id="honey"
+                type="hidden"
+                {...register('honey')}
+                placeholder="Some text here"
+                className="block w-full appearance-none rounded-sm border border-gray-300 px-3 py-2 placeholder-gray-400 transition duration-200 ease-in-out focus:border-black focus:outline-none focus:ring-black sm:text-sm"
+              />
+              <div>
+                <div className="mt-3 flex  max-w-md gap-x-4">
+                  {hasSubmitted ? (
+                    <p className="text-tertiary-foreground">
+                      Awesome, you&apos;re on the list! Thanks for subscribing.
+                    </p>
+                  ) : (
+                    <>
+                      {' '}
+                      <Input
+                        type="email"
+                        placeholder="you@email.com"
+                        {...register('email', { required: true })}
+                        className="placeholder:text-tertiary-foreground autofill:bg-black"
+                      />
+                      <Button
+                        type="submit"
+                        variant={'secondary'}
+                        className="dark:hover-text-white dark:disabled:big-zinc-500 rounded-md border border-input bg-background text-tertiary-foreground"
+                        disabled={!isEmpty(errors) || isSubmitting}
+                      >
+                        {!isSubmitting ? (
+                          'Subscribe'
+                        ) : (
+                          <LoadingDots
+                            color={theme === 'dark' ? 'white' : 'black'}
+                          />
+                        )}
+                      </Button>{' '}
+                    </>
+                  )}
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-
-      <Button
-        type="submit"
-        className="dark:hover-text-white dark:disabled:big-zinc-500 bg-accent-300 hover:bg-accent-500 dark:bg-accent-300 dark:hover:bg-accent-500 rounded-sm text-black hover:text-white disabled:bg-zinc-500"
-        disabled={!isEmpty(errors) || isSubmitting}
-      >
-        {!isSubmitting ? 'Submit' : <LoadingDots color="white" />}
-      </Button>
-    </form>
+    </Container>
   )
 }

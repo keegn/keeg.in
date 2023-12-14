@@ -17,7 +17,7 @@ export function Hero({
 }) {
   return (
     <>
-      <Container type="section" className="pb-12 pt-8 sm:pt-24">
+      <Container type="section" className="pb-12 pt-8 sm:pt-12">
         {includeImage && (
           <div className="mb-8 flex items-center justify-between">
             <Image
