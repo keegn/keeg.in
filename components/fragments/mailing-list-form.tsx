@@ -96,7 +96,8 @@ export function MailingListForm({}: AccessModalProps) {
               <div>
                 <div className="mt-3 flex  max-w-md gap-x-4">
                   {hasSubmitted ? (
-                    <p className="text-tertiary-foreground">
+                    // NOTE: pb-4 for is a quick hack for the page jumping when the form is submitted
+                    <p className="pb-4 text-tertiary-foreground">
                       Awesome, you&apos;re on the list! Thanks for subscribing.
                     </p>
                   ) : (

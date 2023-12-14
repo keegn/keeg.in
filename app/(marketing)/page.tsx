@@ -7,7 +7,6 @@ export default function Home() {
     <>
       <Hero
         title={'Product engineer creating internet software.'}
-        includeUpdatedAt
         includeImage
       />
       <ContentCard />
