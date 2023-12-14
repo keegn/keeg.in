@@ -83,6 +83,58 @@
     font-feature-settings: 'rlig' 1, 'calt' 1;
   }
 
+  .loading {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .loading .spacer {
+    margin-right: 2px;
+  }
+
+  .loading span {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 1px;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: @apply text-foreground;
+    /* -webkit-box-shadow: 0 0 0px 1000px #1b1b6c inset; */
+    background-color: @apply bg-background;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  .loading span:nth-of-type(2) {
+    animation-delay: 0.2s;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0.2;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+
   .divider-line {
     width: 100%;
     height: 1px;
