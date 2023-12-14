@@ -15,7 +15,6 @@ import {
 
 interface MailingListConfirmationProps {
   urlLink?: string
-  firstName?: string
 }
 
 const baseUrl =
@@ -27,7 +26,6 @@ const baseUrl =
 
 export const MailingListConfirmation = ({
   urlLink = baseUrl,
-  firstName,
 }: MailingListConfirmationProps) => (
   <Html>
     <Head />
@@ -42,7 +40,7 @@ export const MailingListConfirmation = ({
             alt="No image"
           /> */}
           <Heading className="mt-12 text-xl font-bold">
-            {firstName ? `${firstName} you` : `You`} are on the list 🪄
+            You are on the list 🪄
           </Heading>
           <Section className="mx-0 my-6">
             <Text className="text-md leading-6"></Text>

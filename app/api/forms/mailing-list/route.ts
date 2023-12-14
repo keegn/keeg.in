@@ -12,12 +12,9 @@ export async function GET() {
 export async function POST(request: Request) {
   const req = await request.json()
 
-  const { firstName, lastName, email, company } = req
+  const { email } = req
 
-  console.log('firstName', firstName)
-  console.log('lastName', lastName)
   console.log('email', email)
-  console.log('company', company)
 
   const date = new Date().toLocaleDateString()
 
@@ -43,7 +40,7 @@ export async function POST(request: Request) {
     range: 'Sheet1!A2',
     valueInputOption: 'USER_ENTERED',
     requestBody: {
-      values: [[firstName, lastName, email, company, date]],
+      values: [[email, date]],
     },
   })
 
