@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import { fontHeading, fontSans, inter } from '@/app/fonts'
 import { Analytics } from '@vercel/analytics/react'
+import { GeistSans } from 'geist/font/sans'
 
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/fragments/theme-provider'
@@ -52,6 +53,7 @@ export default function RootLayout({
           'min-h-screen bg-background font-sans antialiased',
           fontHeading.variable,
           fontSans.variable,
+          GeistSans.variable,
           inter.variable
         )}
       >

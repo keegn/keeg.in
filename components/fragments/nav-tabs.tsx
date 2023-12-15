@@ -17,7 +17,7 @@ export function NavTabs() {
             path == link.href
               ? 'transition-color ease-smooth cursor-pointer px-5 py-1 text-sm text-primary-foreground duration-150'
               : 'transition-color ease-smooth cursor-pointer px-5 py-1 text-sm text-tertiary-foreground duration-150  ',
-            'font-inter font-medium tracking-tight'
+            'font-sans font-medium'
           )}
         >
           {link.label}
