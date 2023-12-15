@@ -105,7 +105,7 @@ export function MailingListForm({}: AccessModalProps) {
                       {' '}
                       <Input
                         type="email"
-                        placeholder="you@email.com"
+                        placeholder="your@email.com"
                         {...register('email', { required: true })}
                         className="placeholder:text-tertiary-foreground autofill:bg-black"
                       />
