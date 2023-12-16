@@ -76,7 +76,7 @@ export function MailingListForm({}: AccessModalProps) {
   }
 
   return (
-    <Container type="section" className="-mt-12 pb-36">
+    <Container type="section" className="-mt-12 pb-12">
       <div className="rounded-xl">
         <div className="grid auto-rows-auto gap-12">
           <div className="grid grid-cols-1 gap-3">
