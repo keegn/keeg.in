@@ -82,8 +82,8 @@ export function MailingListForm({}: AccessModalProps) {
           <div className="grid grid-cols-1 gap-3">
             <p className="text-tertiary-foreground">Newsletter</p>
             <p>
-              Interesting internet finds, practical software and life tips, plus
-              updates on my latest projects. Sent once per month.
+              Interesting internet finds and updates on my latest projects.{' '}
+              <br /> Sent once per month.
             </p>
             <form onSubmit={handleSubmit(onSubmit)} className="w-full">
               <input
