@@ -21,9 +21,8 @@ export function SocialLinks() {
       <div className="rounded-xl">
         <div className="grid auto-rows-auto gap-12">
           <div className="grid grid-cols-1 gap-3">
-            <p className="text-tertiary-foreground">Links</p>
             <TooltipProvider>
-              <ul className="flex gap-x-4">
+              <ul className="flex gap-x-0">
                 <li className="flex dark:hidden">
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -32,12 +31,12 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent">
                           <Image
                             src={githubmark}
                             alt="Github logo"
-                            width={36}
-                            height={36}
+                            width={20}
+                            height={20}
                             placeholder="blur"
                           />
                         </div>
@@ -54,12 +53,12 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent">
                           <Image
                             src={githubmarkwhite}
                             alt="Github logo"
-                            width={36}
-                            height={36}
+                            width={20}
+                            height={20}
                             placeholder="blur"
                           />
                         </div>
@@ -76,12 +75,12 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent">
                           <Image
                             src={layerslogo}
                             alt="Layers.to logo"
-                            width={36}
-                            height={36}
+                            width={20}
+                            height={20}
                             placeholder="blur"
                           />
                         </div>
@@ -98,12 +97,12 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent ">
                           <Image
                             src={layerslogowhite}
                             alt="Layers.to logo"
-                            width={36}
-                            height={36}
+                            width={20}
+                            height={20}
                             placeholder="blur"
                           />
                         </div>
@@ -120,12 +119,12 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-3 dark:bg-zinc-900">
+                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent ">
                           <Image
                             src={xlogowhite}
                             alt="X logo"
-                            width={36}
-                            height={36}
+                            width={16}
+                            height={16}
                             placeholder="blur"
                           />
                         </div>
@@ -142,12 +141,12 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-3 dark:bg-zinc-900">
+                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent">
                           <Image
                             src={xlogoblack}
                             alt="X logo"
-                            width={36}
-                            height={36}
+                            width={16}
+                            height={16}
                             placeholder="blur"
                           />
                         </div>
