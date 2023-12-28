@@ -80,10 +80,10 @@ export function MailingListForm({}: AccessModalProps) {
       <div className="rounded-xl">
         <div className="grid auto-rows-auto gap-12">
           <div className="grid grid-cols-1 gap-3">
-            <p className="text-tertiary-foreground">Newsletter</p>
+            <p className="text-tertiary-foreground">Mailing list</p>
             <p>
-              Interesting internet finds and updates on my latest projects. Sent
-              once per month.
+              Quarterly insights on new projects and latest finds. No spam.
+              Unsubscribe anytime.
             </p>
             <form onSubmit={handleSubmit(onSubmit)} className="w-full">
               <input

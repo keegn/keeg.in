@@ -18,10 +18,11 @@ export function ContentCard() {
             <p className=" text-tertiary-foreground">Availability</p>
 
             <p>
-              I have limited availability and occasionally take on engagements.
-              If you&apos;re a founder or an early stage startup looking to
-              consult regarding design, frontend engineering or product strategy
-              — please reach out.
+              I have limited availability and occasionally collaborate on
+              projects. If you&apos;re a founder or an early-stage startup in
+              need of expertise in product design, frontend engineering,
+              fullstack javascript, or building teams — please feel free to
+              reach out.
             </p>
           </div>
         </div>
