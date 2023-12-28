@@ -6,6 +6,7 @@ import { Circle } from 'lucide-react'
 import { useTheme } from 'next-themes'
 
 import { siteConfig } from '@/config/site'
+import { Badge } from '@/components/ui/badge'
 import {
   CommandDialog,
   CommandEmpty,
@@ -24,7 +25,7 @@ interface CommandMenuProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function CommandMenu({ ...props }: CommandMenuProps) {
   const [open, setOpen] = React.useState(false)
-  const { setTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
   const router = useRouter()
 
   React.useEffect(() => {
@@ -60,14 +61,29 @@ export function CommandMenu({ ...props }: CommandMenuProps) {
             <CommandItem onSelect={() => runCommand(() => setTheme('light'))}>
               <Icons.sun className="mr-2 h-4 w-4" />
               Light
+              {theme === 'light' && (
+                <Badge variant="outline" className="ml-3">
+                  Current
+                </Badge>
+              )}
             </CommandItem>
             <CommandItem onSelect={() => runCommand(() => setTheme('dark'))}>
               <Icons.moon className="mr-2 h-4 w-4" />
               Dark
+              {theme === 'dark' && (
+                <Badge variant="outline" className="ml-3">
+                  Current
+                </Badge>
+              )}
             </CommandItem>
             <CommandItem onSelect={() => runCommand(() => setTheme('system'))}>
               <Icons.laptop className="mr-2 h-4 w-4" />
               System
+              {theme === 'system' && (
+                <Badge variant="outline" className="ml-3">
+                  Current
+                </Badge>
+              )}
             </CommandItem>
           </CommandGroup>
           <CommandSeparator />
