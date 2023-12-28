@@ -17,12 +17,12 @@ import { Container } from '../fragments/container'
 
 export function SocialLinks() {
   return (
-    <Container type="section" className="pb-24">
+    <Container type="section" className="pb-24 pt-3">
       <div className="rounded-xl">
         <div className="grid auto-rows-auto gap-12">
           <div className="grid grid-cols-1 gap-3">
             <TooltipProvider>
-              <ul className="flex gap-x-0">
+              <ul className="flex gap-x-4">
                 <li className="flex dark:hidden">
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -31,7 +31,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent">
+                        <div className="flex items-center justify-center overflow-hidden rounded-md border-transparent">
                           <Image
                             src={githubmark}
                             alt="Github logo"
@@ -53,7 +53,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent">
+                        <div className="flex items-center justify-center overflow-hidden rounded-md border-transparent">
                           <Image
                             src={githubmarkwhite}
                             alt="Github logo"
@@ -75,7 +75,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent">
+                        <div className="flex  items-center justify-center overflow-hidden rounded-md border-transparent">
                           <Image
                             src={layerslogo}
                             alt="Layers.to logo"
@@ -97,7 +97,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent ">
+                        <div className="flex  items-center justify-center overflow-hidden rounded-md border-transparent ">
                           <Image
                             src={layerslogowhite}
                             alt="Layers.to logo"
@@ -119,7 +119,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent ">
+                        <div className="flex  items-center justify-center overflow-hidden rounded-md border-transparent ">
                           <Image
                             src={xlogowhite}
                             alt="X logo"
@@ -141,7 +141,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent">
+                        <div className="flex  items-center justify-center overflow-hidden rounded-md border-transparent">
                           <Image
                             src={xlogoblack}
                             alt="X logo"
