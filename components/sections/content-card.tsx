@@ -8,9 +8,9 @@ export function ContentCard() {
           <div className="grid grid-cols-1 gap-3">
             <p className="text-tertiary-foreground">Intro</p>
             <p>
-              Product designer and frontend software engineer. Previously
-              founding team at Paytient, a new way to pay for out of pocket
-              health care expenses.
+              Software engineer and product designer. Previously founding team
+              at Paytient, a new way to pay for out of pocket health care
+              expenses.
             </p>
           </div>
 
