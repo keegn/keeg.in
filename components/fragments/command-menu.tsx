@@ -62,7 +62,7 @@ export function CommandMenu({ ...props }: CommandMenuProps) {
               <Icons.sun className="mr-2 h-4 w-4" />
               Light
               {theme === 'light' && (
-                <Badge variant="outline" className="ml-3">
+                <Badge variant="outline" className="ml-3 text-muted-foreground">
                   Current
                 </Badge>
               )}
@@ -71,7 +71,7 @@ export function CommandMenu({ ...props }: CommandMenuProps) {
               <Icons.moon className="mr-2 h-4 w-4" />
               Dark
               {theme === 'dark' && (
-                <Badge variant="outline" className="ml-3">
+                <Badge variant="outline" className="ml-3 text-muted-foreground">
                   Current
                 </Badge>
               )}
@@ -80,7 +80,7 @@ export function CommandMenu({ ...props }: CommandMenuProps) {
               <Icons.laptop className="mr-2 h-4 w-4" />
               System
               {theme === 'system' && (
-                <Badge variant="outline" className="ml-3">
+                <Badge variant="outline" className="ml-3 text-muted-foreground">
                   Current
                 </Badge>
               )}
