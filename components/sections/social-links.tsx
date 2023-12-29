@@ -17,7 +17,7 @@ import { Container } from '../fragments/container'
 
 export function SocialLinks() {
   return (
-    <Container type="section" className="pb-24 pt-3">
+    <Container type="section" className="pb-32 pt-3 md:pb-24">
       <div className="rounded-xl">
         <div className="grid auto-rows-auto gap-12">
           <div className="grid grid-cols-1 gap-3">
