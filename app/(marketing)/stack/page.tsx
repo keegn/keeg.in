@@ -4,7 +4,7 @@ import { StackCard } from '@/components/sections/stack-card'
 export default function Stack() {
   return (
     <>
-      <Hero title={`Tools & Products`} />
+      <Hero title={`Stack`} />
       <StackCard />
     </>
   )

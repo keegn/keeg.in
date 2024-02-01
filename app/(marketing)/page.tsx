@@ -6,10 +6,7 @@ import { SocialLinks } from '@/components/sections/social-links'
 export default function Home() {
   return (
     <>
-      <Hero
-        title={'Product engineer creating internet software.'}
-        includeImage
-      />
+      <Hero title={'Software engineer & product designer.'} includeImage />
       <ContentCard />
       <MailingListForm />
       <SocialLinks />

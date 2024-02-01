@@ -4,7 +4,7 @@ import { ProductCard } from '@/components/sections/product-card'
 export default function Products() {
   return (
     <>
-      <Hero title={`Software & Templates`} />
+      <Hero title={`Products`} />
       <ProductCard />
     </>
   )

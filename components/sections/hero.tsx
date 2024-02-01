@@ -25,7 +25,7 @@ export function Hero({
               alt="Keegn Burkett profile picture"
               width={32}
               height={32}
-              className="my-[2px] rounded-full"
+              className="rounded-full"
               placeholder="blur"
             />
             <CommandMenu />
@@ -36,7 +36,7 @@ export function Hero({
           {includeImage ? (
             <p
               className={cn(
-                'bg-clip-text text-left font-heading text-3xl italic text-primary-foreground'
+                'bg-clip-text text-left font-heading text-2xl italic text-primary-foreground'
               )}
             >
               <Balancer>{title}</Balancer>
@@ -45,7 +45,7 @@ export function Hero({
             <div className="flex w-full items-center justify-between">
               <p
                 className={cn(
-                  'bg-clip-text text-left font-heading text-3xl italic text-primary-foreground'
+                  'bg-clip-text text-left font-heading text-2xl italic text-primary-foreground'
                 )}
               >
                 <Balancer>{title}</Balancer>
