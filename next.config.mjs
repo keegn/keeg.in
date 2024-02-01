@@ -14,6 +14,16 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   swcMinify: true,
+  redirects: async () => {
+    return [
+      {
+        source: '/products',
+        destination: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        permanent: false,
+        basePath: false,
+      },
+    ]
+  },
 }
 
 export default nextConfig

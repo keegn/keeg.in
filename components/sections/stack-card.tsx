@@ -23,13 +23,7 @@ export function StackCard() {
           >
             {/* Icon */}
             <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
-              <Image
-                src={figmaLogo}
-                alt="Figma logo"
-                width={24}
-                height={24}
-                placeholder="blur"
-              />
+              <Image src={figmaLogo} alt="Figma logo" width={24} height={24} />
             </div>
             {/* Text */}
             <div className="flex flex-col items-start">
@@ -53,7 +47,6 @@ export function StackCard() {
                 alt="Tailwind CSS logo"
                 width={24}
                 height={24}
-                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -78,7 +71,6 @@ export function StackCard() {
                 alt="vscode logo"
                 width={24}
                 height={24}
-                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -104,7 +96,6 @@ export function StackCard() {
                 width={24}
                 height={24}
                 className="fill-white"
-                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -130,7 +121,6 @@ export function StackCard() {
                 width={24}
                 height={24}
                 className="rounded-full fill-white"
-                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -156,7 +146,6 @@ export function StackCard() {
                 width={24}
                 height={24}
                 className="fill-white"
-                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -182,7 +171,6 @@ export function StackCard() {
                 width={24}
                 height={24}
                 className="fill-white"
-                placeholder="blur"
               />
             </div>
             {/* Text */}
@@ -206,7 +194,6 @@ export function StackCard() {
                 width={24}
                 height={24}
                 className="fill-white"
-                placeholder="blur"
               />
             </div>
             {/* Text */}

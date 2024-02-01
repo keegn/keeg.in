@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -10,7 +11,7 @@ export function NavTabs() {
   return (
     <div className="flex items-end justify-center p-2">
       {siteConfig.navLinks.map((link) => (
-        <>
+        <Fragment key={link.href}>
           {link.href === '/products' ? (
             <span className="px-5 py-1 font-sans text-sm font-medium text-tertiary-foreground hover:cursor-not-allowed">
               {link.label}
@@ -18,7 +19,6 @@ export function NavTabs() {
           ) : (
             <Link
               href={link.href}
-              key={link.href}
               className={cn(
                 path == link.href
                   ? 'transition-color ease-smooth cursor-pointer px-5 py-1 text-sm text-primary-foreground duration-150'
@@ -29,7 +29,7 @@ export function NavTabs() {
               {link.label}
             </Link>
           )}
-        </>
+        </Fragment>
       ))}
     </div>
   )
