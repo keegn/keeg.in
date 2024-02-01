@@ -22,12 +22,12 @@ export function StackCard() {
             className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
           >
             {/* Icon */}
-            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
                 src={figmaLogo}
                 alt="Figma logo"
-                width={36}
-                height={36}
+                width={24}
+                height={24}
                 placeholder="blur"
               />
             </div>
@@ -47,12 +47,12 @@ export function StackCard() {
             className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
           >
             {/* Icon */}
-            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
                 src={tailwindLogo}
                 alt="Tailwind CSS logo"
-                width={36}
-                height={36}
+                width={24}
+                height={24}
                 placeholder="blur"
               />
             </div>
@@ -72,12 +72,12 @@ export function StackCard() {
             className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
           >
             {/* Icon */}
-            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
                 src={vscodeLogo}
                 alt="vscode logo"
-                width={36}
-                height={36}
+                width={24}
+                height={24}
                 placeholder="blur"
               />
             </div>
@@ -97,12 +97,12 @@ export function StackCard() {
             className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
           >
             {/* Icon */}
-            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
                 src={nextLogo}
                 alt="Next.js logo"
-                width={36}
-                height={36}
+                width={24}
+                height={24}
                 className="fill-white"
                 placeholder="blur"
               />
@@ -123,12 +123,12 @@ export function StackCard() {
             className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
           >
             {/* Icon */}
-            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
                 src={prisma}
                 alt="Prisma logo"
-                width={36}
-                height={36}
+                width={24}
+                height={24}
                 className="rounded-full fill-white"
                 placeholder="blur"
               />
@@ -149,12 +149,12 @@ export function StackCard() {
             className="flex w-full items-center gap-5 border-b border-zinc-100 p-5 hover:rounded-md hover:bg-zinc-100 dark:border-zinc-900 dark:hover:bg-zinc-900"
           >
             {/* Icon */}
-            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-md border-transparent bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
                 src={planetscale}
                 alt="PlanetScale logo"
-                width={36}
-                height={36}
+                width={24}
+                height={24}
                 className="fill-white"
                 placeholder="blur"
               />
@@ -175,12 +175,12 @@ export function StackCard() {
             className="b flex w-full items-center gap-5 p-5 hover:rounded-md hover:bg-zinc-100  dark:hover:bg-zinc-900"
           >
             {/* Icon */}
-            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md  bg-zinc-100 p-2 dark:bg-zinc-900">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-md  bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
                 src={openAILight}
                 alt="Open AI logo"
-                width={36}
-                height={36}
+                width={24}
+                height={24}
                 className="fill-white"
                 placeholder="blur"
               />
@@ -199,12 +199,12 @@ export function StackCard() {
             className="flex w-full items-center gap-5  p-5 hover:rounded-md  hover:bg-zinc-100 dark:hover:bg-zinc-900"
           >
             {/* Icon */}
-            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md  bg-zinc-100 p-2 dark:bg-zinc-900">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-md  bg-zinc-100 p-2 dark:bg-zinc-900">
               <Image
                 src={openAIDark}
                 alt="Open AI logo"
-                width={36}
-                height={36}
+                width={24}
+                height={24}
                 className="fill-white"
                 placeholder="blur"
               />
