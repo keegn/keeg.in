@@ -5,6 +5,7 @@ import { fontHeading, fontSans, inter } from '@/app/fonts'
 import { Analytics } from '@vercel/analytics/react'
 import { GeistSans } from 'geist/font/sans'
 
+import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/fragments/theme-provider'
 import { TailwindIndicator } from '@/components/ui/tailwind-indicator'
@@ -12,15 +13,15 @@ import { TailwindIndicator } from '@/components/ui/tailwind-indicator'
 export const metadata: Metadata = {
   metadataBase: new URL('https://keeg.in'),
   title: {
-    default: 'Keegan Burkett',
+    default: siteConfig.name,
     template: '%s | Keegan Burkett',
   },
-  description: 'Developer, designer, cyclist.',
+  description: siteConfig.description,
   openGraph: {
-    title: 'Keegan Burkett',
-    description: 'Developer, designer, cyclist.',
+    title: siteConfig.name,
+    description: siteConfig.description,
     url: 'https://keeg.in',
-    siteName: 'Keegan',
+    siteName: 'Keegan Burkett',
     locale: 'en-US',
     type: 'website',
   },

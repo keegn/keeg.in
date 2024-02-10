@@ -10,9 +10,9 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: 'Keegan Burkett | Software Engineer',
+  name: 'Keegan Burkett | Software Engineer & Product Designer',
   description:
-    'Personal website of Keegan Burkett, a software engineer based in the United States.',
+    'Personal website of Keegan Burkett, a software engineer and product engineer based in the United States.',
   navLinks: [
     { href: '/', label: 'About' },
     { href: '/stack', label: 'Stack' },
