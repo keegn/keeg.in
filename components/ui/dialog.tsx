@@ -10,6 +10,8 @@ const Dialog = DialogPrimitive.Root
 
 const DialogTrigger = DialogPrimitive.Trigger
 
+// TODO: Fix the type of DialogPortal
+
 const DialogPortal = ({
   className,
   ...props
