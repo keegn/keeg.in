@@ -1,5 +1,5 @@
 // import { BgRay } from '@/components/fragments/bg-ray'
-import { NavIsland } from '@/components/fragments/nav-island'
+// import { NavIsland } from '@/components/fragments/nav-island'
 
 interface MarketingLayoutProps {
   children: React.ReactNode
