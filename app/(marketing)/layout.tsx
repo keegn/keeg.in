@@ -12,7 +12,7 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
         {/* <BgRay /> */}
         {children}
       </div>
-      <NavIsland className="fixed bottom-6 self-center" />
+      {/* <NavIsland className="fixed bottom-6 self-center" /> */}
     </div>
   )
 }
