@@ -119,7 +119,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex  items-center justify-center overflow-hidden rounded-md border-transparent ">
+                        <div className="flex  items-center justify-center overflow-hidden  border-transparent ">
                           <Image
                             src={xlogowhite}
                             alt="X logo"
@@ -141,7 +141,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex  items-center justify-center overflow-hidden rounded-md border-transparent">
+                        <div className="flex  items-center justify-center overflow-hidden border-transparent">
                           <Image
                             src={xlogoblack}
                             alt="X logo"

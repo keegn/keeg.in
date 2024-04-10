@@ -1,4 +1,4 @@
-import { Container } from '../fragments/container'
+import { Container } from '@/components/fragments/container'
 
 export function ContentCard() {
   return (
