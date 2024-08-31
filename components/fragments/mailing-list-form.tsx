@@ -79,7 +79,7 @@ export function MailingListForm({}: AccessModalProps) {
     <Container type="section" className="-mt-12 pb-6">
       <div className="rounded-xl">
         <div className="grid auto-rows-auto gap-12">
-          <div className="grid grid-cols-1 gap-3">
+          <div className="grid grid-cols-1 gap-2">
             <p className="text-tertiary-foreground">Mailing list</p>
             <p>
               Quarterly insights on new projects and latest finds. No spam.

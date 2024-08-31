@@ -36,7 +36,7 @@ export function Hero({
           {includeImage ? (
             <p
               className={cn(
-                'bg-clip-text text-left font-heading text-2xl italic text-primary-foreground'
+                'bg-clip-text text-left font-heading text-xl italic text-primary-foreground'
               )}
             >
               <Balancer>{title}</Balancer>
