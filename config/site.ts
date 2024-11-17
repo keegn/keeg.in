@@ -16,5 +16,6 @@ export const siteConfig: SiteConfig = {
   navLinks: [
     { href: '/', label: 'About' },
     { href: '/stack', label: 'Stack' },
+    { href: '/deck', label: 'Deck' },
   ],
 }

@@ -5,6 +5,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Command,
+  Copy,
   CreditCard,
   File,
   FileText,
@@ -26,11 +27,12 @@ import {
   type Icon as LucideIcon,
 } from 'lucide-react'
 
-export type Icon = LucideIcon
+export type Icon = typeof LucideIcon
 
 export const Icons = {
   logo: Command,
   close: X,
+  copy: Copy,
   spinner: Loader2,
   chevronLeft: ChevronLeft,
   chevronRight: ChevronRight,
