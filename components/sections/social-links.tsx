@@ -4,6 +4,8 @@ import githubmarkwhite from '@/public/design/github-mark-white.png'
 import githubmark from '@/public/design/github-mark.png'
 import layerslogowhite from '@/public/design/layers-logo-white.png'
 import layerslogo from '@/public/design/layers-logo.png'
+import strava from '@/public/design/strava-dark.png'
+import stravawhite from '@/public/design/strava-light.png'
 import xlogoblack from '@/public/design/x-logo-black.png'
 import xlogowhite from '@/public/design/x-logo-white.png'
 
@@ -20,9 +22,9 @@ export function SocialLinks() {
     <Container type="section" className="pb-32 pt-3 md:pb-24">
       <div className="rounded-xl">
         <div className="grid auto-rows-auto gap-12">
-          <div className="grid grid-cols-1 gap-3">
+          <div className="grid grid-cols-1 gap-4">
             <TooltipProvider>
-              <ul className="flex gap-x-4">
+              <ul className="flex gap-x-5">
                 <li className="flex dark:hidden">
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -75,7 +77,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex  items-center justify-center overflow-hidden rounded-md border-transparent">
+                        <div className="flex items-center justify-center overflow-hidden rounded-md border-transparent">
                           <Image
                             src={layerslogo}
                             alt="Layers.to logo"
@@ -97,7 +99,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex  items-center justify-center overflow-hidden rounded-md border-transparent ">
+                        <div className="flex items-center justify-center overflow-hidden rounded-md border-transparent">
                           <Image
                             src={layerslogowhite}
                             alt="Layers.to logo"
@@ -119,7 +121,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex  items-center justify-center overflow-hidden  border-transparent ">
+                        <div className="flex items-center justify-center overflow-hidden border-transparent">
                           <Image
                             src={xlogowhite}
                             alt="X logo"
@@ -141,7 +143,7 @@ export function SocialLinks() {
                         target="_blank"
                         className="flex w-full items-center"
                       >
-                        <div className="flex  items-center justify-center overflow-hidden border-transparent">
+                        <div className="flex items-center justify-center overflow-hidden border-transparent">
                           <Image
                             src={xlogoblack}
                             alt="X logo"
@@ -153,6 +155,50 @@ export function SocialLinks() {
                       </Link>
                     </TooltipTrigger>
                     <TooltipContent>X (Twitter)</TooltipContent>
+                  </Tooltip>
+                </li>
+                <li className="hidden dark:flex">
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Link
+                        href="https://www.strava.com/athletes/16025620"
+                        target="_blank"
+                        className="flex w-full items-center"
+                      >
+                        <div className="flex items-center justify-center overflow-hidden border-transparent">
+                          <Image
+                            src={stravawhite}
+                            alt="X logo"
+                            width={20}
+                            height={20}
+                            placeholder="blur"
+                          />
+                        </div>
+                      </Link>
+                    </TooltipTrigger>
+                    <TooltipContent>Strava</TooltipContent>
+                  </Tooltip>
+                </li>
+                <li className="flex dark:hidden">
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Link
+                        href="https://www.strava.com/athletes/16025620"
+                        target="_blank"
+                        className="flex w-full items-center"
+                      >
+                        <div className="flex items-center justify-center overflow-hidden border-transparent">
+                          <Image
+                            src={strava}
+                            alt="X logo"
+                            width={20}
+                            height={20}
+                            placeholder="blur"
+                          />
+                        </div>
+                      </Link>
+                    </TooltipTrigger>
+                    <TooltipContent>Strava</TooltipContent>
                   </Tooltip>
                 </li>
               </ul>
