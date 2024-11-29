@@ -10,8 +10,9 @@ export function StackIntro() {
             <p>
               Here are some of my favorite tools that I use daily. Recently,
               I've been using Cursor as my editor of choice for its AI
-              assistance, but overall, I believe in using the right tool for the
-              right job.
+              assistance. However, I firmly believe in using the right tool for
+              the right job and have experience with many more tools beyond
+              those listed below.
             </p>
           </div>
         </div>
