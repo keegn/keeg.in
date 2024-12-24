@@ -35,7 +35,10 @@ export function Hero({
 
         <div className="flex flex-col items-start gap-4">
           {includeImage ? (
-            <TextScramble className="bg-clip-text text-left font-heading text-xl italic text-primary-foreground">
+            <TextScramble
+              characterSet={'abcdefghijklmnopqrstuvwxyz'}
+              className="text-left font-heading text-xl italic text-primary-foreground"
+            >
               {title}
             </TextScramble>
           ) : (
