@@ -17,7 +17,7 @@ export function ContentCard() {
           </div>
 
           <div className="grid grid-cols-1 gap-2">
-            <p className=" text-tertiary-foreground">Availability</p>
+            <p className="text-tertiary-foreground">Availability</p>
 
             <p>
               I have limited availability but occasionally collaborate on

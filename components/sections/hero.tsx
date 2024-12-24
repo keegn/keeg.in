@@ -5,6 +5,7 @@ import Balancer from 'react-wrap-balancer'
 import { cn } from '@/lib/utils'
 import { CommandMenu } from '@/components/fragments/command-menu'
 import { Container } from '@/components/fragments/container'
+import { TextScramble } from '@/components/fragments/text-scrambler'
 
 export function Hero({
   title,
@@ -34,13 +35,9 @@ export function Hero({
 
         <div className="flex flex-col items-start gap-4">
           {includeImage ? (
-            <p
-              className={cn(
-                'bg-clip-text text-left font-heading text-xl italic text-primary-foreground'
-              )}
-            >
-              <Balancer>{title}</Balancer>
-            </p>
+            <TextScramble className="bg-clip-text text-left font-heading text-xl italic text-primary-foreground">
+              {title}
+            </TextScramble>
           ) : (
             <div className="flex w-full items-center justify-between">
               <p

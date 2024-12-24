@@ -11,7 +11,6 @@ import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'
 import {
   Drawer,
   DrawerContent,
-  DrawerDescription,
   DrawerHeader,
   DrawerTitle,
 } from '@/components/ui/drawer'

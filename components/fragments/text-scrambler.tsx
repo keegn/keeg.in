@@ -1,168 +1,86 @@
-import * as React from 'react'
-import { useReducedMotion } from 'framer-motion'
+'use client'
 
-import { useInterval } from '@/lib/hooks/use-interval'
-import { useMounted } from '@/lib/hooks/use-mounted'
+import { useEffect, useState, type JSX } from 'react'
+import { motion, MotionProps } from 'motion/react'
 
-/**
- * TextScrambler
- *
- * @see https://www.nan.fyi/experiments/scrambled-text
- */
-
-interface TextScramblerProps {
+type TextScrambleProps = {
   children: string
-  /**
-   * The speed at which to reveal the characters
-   * @default 0.5
-   */
+  duration?: number
   speed?: number
-}
+  characterSet?: string
+  as?: React.ElementType
+  className?: string
+  trigger?: boolean
+  onScrambleComplete?: () => void
+} & MotionProps
 
-const CHARACTERS = [
-  'A',
-  'a',
-  'B',
-  'b',
-  'C',
-  'c',
-  'D',
-  'd',
-  'E',
-  'e',
-  'F',
-  'f',
-  'G',
-  'g',
-  'H',
-  'h',
-  'I',
-  'i',
-  'J',
-  'j',
-  'K',
-  'k',
-  'L',
-  'l',
-  'M',
-  'm',
-  'N',
-  'n',
-  'O',
-  'o',
-  'P',
-  'p',
-  'Q',
-  'q',
-  'R',
-  'r',
-  'S',
-  's',
-  'T',
-  't',
-  'U',
-  'u',
-  'V',
-  'v',
-  'W',
-  'w',
-  'X',
-  'x',
-  'Y',
-  'y',
-  'Z',
-  'z',
-  '~',
-  '!',
-  '@',
-  '#',
-  '$',
-  '%',
-  '^',
-  '&',
-  '*',
-  '(',
-  ')',
-  '-',
-  '+',
-  '=',
-  '[',
-  ']',
-  '{',
-  '}',
-  '|',
-  ';',
-  ':',
-  ',',
-  '.',
-  '/',
-  '<',
-  '>',
-  '?',
-]
+const defaultChars =
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
 
-const scramble = (text: string) => {
-  const chars = text.split('')
-  const obfuscatedChars = chars.map((char) => {
-    if (/^\s$/.test(char)) {
-      return char
-    }
-    const randomIndex = Math.floor(Math.random() * CHARACTERS.length)
-    return CHARACTERS[randomIndex]
-  })
-  return obfuscatedChars.join('')
-}
-
-const getScrambledState = (
-  text: string,
-  windowSize: number,
-  windowStart: number
-) => {
-  const unscrambled = text.slice(0, windowStart)
-  const scrambled = scramble(text.slice(windowStart, windowStart + windowSize))
-  return [unscrambled, scrambled]
-}
-
-export const TextScrambler = ({
+export function TextScramble({
   children,
-  speed = 0.9,
-}: TextScramblerProps) => {
-  const mounted = useMounted()
-  const shouldReduceMotion = useReducedMotion()
-  const size = children.length
-
-  const [[unscrambled, scrambled], setScrambledText] = React.useState(
-    getScrambledState(children, size, 0)
+  duration = 0.8,
+  speed = 0.04,
+  characterSet = defaultChars,
+  className,
+  as: Component = 'p',
+  trigger = true,
+  onScrambleComplete,
+  ...props
+}: TextScrambleProps) {
+  const MotionComponent = motion.create(
+    Component as keyof JSX.IntrinsicElements
   )
-  const [count, increment] = React.useReducer((state) => state + 1, 0)
-  const finished = count > size
+  const [displayText, setDisplayText] = useState(children)
+  const [isAnimating, setIsAnimating] = useState(false)
+  const text = children
 
-  useInterval(
-    () => {
-      increment()
-      setScrambledText(getScrambledState(children, size, count))
-    },
-    finished ? null : 30 / speed
-  )
+  const scramble = async () => {
+    if (isAnimating) return
+    setIsAnimating(true)
 
-  if (mounted && shouldReduceMotion) {
-    return <>{children}</>
+    const steps = duration / speed
+    let step = 0
+
+    const interval = setInterval(() => {
+      let scrambled = ''
+      const progress = step / steps
+
+      for (let i = 0; i < text.length; i++) {
+        if (text[i] === ' ') {
+          scrambled += ' '
+          continue
+        }
+
+        if (progress * text.length > i) {
+          scrambled += text[i]
+        } else {
+          scrambled +=
+            characterSet[Math.floor(Math.random() * characterSet.length)]
+        }
+      }
+
+      setDisplayText(scrambled)
+      step++
+
+      if (step > steps) {
+        clearInterval(interval)
+        setDisplayText(text)
+        setIsAnimating(false)
+        onScrambleComplete?.()
+      }
+    }, speed * 1000)
   }
 
+  useEffect(() => {
+    if (!trigger) return
+
+    scramble()
+  }, [trigger])
+
   return (
-    <span className="inline-grid">
-      <span className="pointer-events-none col-start-1 col-end-1 row-start-1 row-end-1 opacity-0">
-        {children}
-      </span>
-      {mounted ? (
-        <span
-          className="col-start-1 col-end-1 row-start-1 row-end-1"
-          aria-hidden={true}
-        >
-          {unscrambled}
-          {scrambled}
-        </span>
-      ) : null}
-    </span>
+    <MotionComponent className={className} {...props}>
+      {displayText}
+    </MotionComponent>
   )
 }

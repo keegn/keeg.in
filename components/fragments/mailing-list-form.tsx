@@ -82,8 +82,8 @@ export function MailingListForm({}: AccessModalProps) {
           <div className="grid grid-cols-1 gap-2">
             <p className="text-tertiary-foreground">Mailing list</p>
             <p>
-              Quarterly insights on new projects and latest finds. No spam.
-              Unsubscribe anytime.
+              Infrequent insights on new projects and interesting finds. No
+              spam. Unsubscribe anytime.
             </p>
             <form onSubmit={handleSubmit(onSubmit)} className="w-full">
               <input
@@ -94,7 +94,7 @@ export function MailingListForm({}: AccessModalProps) {
                 className="block w-full appearance-none rounded-sm border border-gray-300 px-3 py-2 placeholder-gray-400 transition duration-200 ease-in-out focus:border-black focus:outline-none focus:ring-black sm:text-sm"
               />
               <div>
-                <div className="mt-3 flex  max-w-md gap-x-4">
+                <div className="mt-3 flex max-w-md gap-x-4">
                   {hasSubmitted ? (
                     // NOTE: pb-4 for is a quick hack for the page jumping when the form is submitted
                     <p className="pb-4 text-tertiary-foreground">

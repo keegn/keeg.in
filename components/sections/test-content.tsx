@@ -1,12 +1,12 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 import { FADE_DOWN_ANIMATION_VARIANTS } from '@/lib/constants'
 import { Container } from '@/components/fragments/container'
-import { ExpandingArrow } from '@/components/ui/expanding-arrow'
 import { FullGrid } from '@/components/fragments/full-grid'
+import { ExpandingArrow } from '@/components/ui/expanding-arrow'
 
 export function TestContent() {
   return (
@@ -30,7 +30,7 @@ export function TestContent() {
         >
           <div>
             <motion.h1
-              className="font-default bg-gradient-to-br from-white to-slate-400  bg-clip-text text-lg font-bold text-transparent drop-shadow-sm sm:text-xl"
+              className="font-default bg-gradient-to-br from-white to-slate-400 bg-clip-text text-lg font-bold text-transparent drop-shadow-sm sm:text-xl"
               variants={FADE_DOWN_ANIMATION_VARIANTS}
             >
               Keegan Burkett
@@ -82,7 +82,7 @@ export function TestContent() {
                 <Link
                   href="https://twitter.com/keegnn"
                   target="_blank"
-                  className="text-md font-default flex justify-between border-b-[1px] border-gray-800 border-opacity-70 bg-gradient-to-br from-white  to-slate-400  bg-clip-text pb-2 text-left text-transparent hover:cursor-pointer"
+                  className="text-md font-default flex justify-between border-b-[1px] border-gray-800 border-opacity-70 bg-gradient-to-br from-white to-slate-400 bg-clip-text pb-2 text-left text-transparent hover:cursor-pointer"
                 >
                   Twitter
                   <ExpandingArrow />
@@ -92,7 +92,7 @@ export function TestContent() {
                 <Link
                   href="https://github.com/keegn"
                   target="_blank"
-                  className="text-md font-default flex justify-between bg-gradient-to-br from-white  to-slate-400  bg-clip-text pb-2 text-left text-transparent hover:cursor-pointer"
+                  className="text-md font-default flex justify-between bg-gradient-to-br from-white to-slate-400 bg-clip-text pb-2 text-left text-transparent hover:cursor-pointer"
                 >
                   Github
                   <ExpandingArrow />
@@ -104,7 +104,7 @@ export function TestContent() {
                 <Link
                   href="https://www.linkedin.com/in/keeganburkett/"
                   target="_blank"
-                  className="text-md font-default flex justify-between border-b-[1px] border-gray-800  border-opacity-70  bg-gradient-to-br from-white to-slate-400 bg-clip-text pb-2 text-left  text-transparent hover:cursor-pointer"
+                  className="text-md font-default flex justify-between border-b-[1px] border-gray-800 border-opacity-70 bg-gradient-to-br from-white to-slate-400 bg-clip-text pb-2 text-left text-transparent hover:cursor-pointer"
                 >
                   LinkedIn
                   <ExpandingArrow />
@@ -114,7 +114,7 @@ export function TestContent() {
                 <Link
                   href="https://dribbble.com/keegin"
                   target="_blank"
-                  className="text-md flex  justify-between bg-gradient-to-br from-white to-slate-400 bg-clip-text pb-2  text-transparent hover:cursor-pointer"
+                  className="text-md flex justify-between bg-gradient-to-br from-white to-slate-400 bg-clip-text pb-2 text-transparent hover:cursor-pointer"
                 >
                   Dribbble
                   <ExpandingArrow />
