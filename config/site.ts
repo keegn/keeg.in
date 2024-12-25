@@ -15,6 +15,6 @@ export const siteConfig: SiteConfig = {
     'Personal website of Keegan Burkett, a software engineer and product designer based in the United States.',
   navLinks: [
     { href: '/', label: 'About' },
-    { href: '/stack', label: 'Stack' },
+    { href: '/tools', label: 'Tools' },
   ],
 }

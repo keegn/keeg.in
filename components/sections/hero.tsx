@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import profilePic from '@/public/design/Keegan-Burkett.jpeg'
 import Balancer from 'react-wrap-balancer'
 
@@ -16,6 +19,8 @@ export function Hero({
   includeUpdatedAt?: boolean
   includeImage?: boolean
 }) {
+  const router = useRouter()
+
   return (
     <>
       <Container type="section" className="pb-12 pt-8 sm:pt-12">
@@ -26,8 +31,9 @@ export function Hero({
               alt="Keegn Burkett profile picture"
               width={32}
               height={32}
-              className="rounded-full"
+              className="cursor-pointer rounded-full"
               placeholder="blur"
+              onClick={() => router.push('/')}
             />
             <CommandMenu />
           </div>

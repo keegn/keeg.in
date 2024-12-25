@@ -5,7 +5,7 @@ import { StackIntro } from '@/components/sections/stack-intro'
 export default function Stack() {
   return (
     <>
-      <Hero title={`Stack`} />
+      <Hero title={`Tools`} includeImage />
       <StackIntro />
       <StackCard />
     </>

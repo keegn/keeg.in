@@ -9,9 +9,9 @@ export function ContentCard() {
             <p className="text-tertiary-foreground">Intro</p>
             <p>
               Hey, I&apos;m Keegan. I have a background in software engineering
-              and product design. I'm currently interested in real estate,
-              privacy, and AI. I was previously part of the founding team at
-              Paytient, a financial technology company in the healthcare
+              and product design. I'm currently interested in AI, fintech,
+              privacy, and real estate. I was previously part of the founding
+              team at Paytient, a financial technology company in the healthcare
               payments space.
             </p>
           </div>
