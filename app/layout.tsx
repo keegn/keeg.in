@@ -58,7 +58,12 @@ export default function RootLayout({
           inter.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
           <TailwindIndicator />
         </ThemeProvider>
